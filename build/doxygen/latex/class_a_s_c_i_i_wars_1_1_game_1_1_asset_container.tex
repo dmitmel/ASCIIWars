@@ -1,0 +1,63 @@
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container}{}\section{Класс A\+S\+C\+I\+I\+Wars.\+Game.\+Asset\+Container}
+\label{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container}\index{A\+S\+C\+I\+I\+Wars.\+Game.\+Asset\+Container@{A\+S\+C\+I\+I\+Wars.\+Game.\+Asset\+Container}}
+
+
+Контейнер ассетов. Хранит их по групам. В каждой группе находятся файлы ассетов.  
+
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_afb55a3f711d67504b677fc2bc38718cc}{Asset\+Container} (string assets\+Directory)
+\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_a73cb91685f397df31d2a18d8b59b3093}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_a73cb91685f397df31d2a18d8b59b3093} 
+override string {\bfseries To\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_afc2c4d42edc386fa6bdbf561546b2083}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_afc2c4d42edc386fa6bdbf561546b2083} 
+readonly Dictionary$<$ string, \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_asset_group}{Asset\+Group} $>$ {\bfseries asset\+Groups} = new Dictionary$<$string, \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_asset_group}{Asset\+Group}$>$()
+\end{DoxyCompactItemize}
+\subsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_ae7149eab74d76098eca27b20d49d0bf9}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_ae7149eab74d76098eca27b20d49d0bf9} 
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_asset_group}{Asset\+Group} {\bfseries this\mbox{[}string group\+Name\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Контейнер ассетов. Хранит их по групам. В каждой группе находятся файлы ассетов. 
+
+В представлении файловой системы выглядит так\+: 
+\begin{DoxyCode}
+> assetsDirectory/
+>     assetGroup1/
+>         asset1.txt
+>         asset2.json
+>     assetGroup2/
+>         asset1.png
+>         asset2.mp3
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_asset_group}{Asset\+Group} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_asset}{Asset} 
+\end{DoxySeeAlso}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_afb55a3f711d67504b677fc2bc38718cc}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_asset_container_afb55a3f711d67504b677fc2bc38718cc} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Asset\+Container@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Asset\+Container}!Asset\+Container@{Asset\+Container}}
+\index{Asset\+Container@{Asset\+Container}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Asset\+Container@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Asset\+Container}}
+\subsubsection{\texorpdfstring{Asset\+Container()}{AssetContainer()}}
+{\footnotesize\ttfamily A\+S\+C\+I\+I\+Wars.\+Game.\+Asset\+Container.\+Asset\+Container (\begin{DoxyParamCaption}\item[{string}]{assets\+Directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Инициализирует контейнер с указанем деректории, откуда грузить группы ассетов. 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+C\+I\+I\+Wars/\+Game/Assets.\+cs\end{DoxyCompactItemize}

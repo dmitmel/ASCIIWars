@@ -1,0 +1,44 @@
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar}{}\section{Класс A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar}
+\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar}\index{A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar}}
+
+
+Печатает символьную полоску загрузки.  
+
+
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38} 
+static void {\bfseries Load} (\hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task}\mbox{[}$\,$\mbox{]} tasks)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Печатает символьную полоску загрузки. 
+
+Загрузка выглядит примерно так\+: 
+\begin{DoxyCode}
+ Тут столько же решёток,
+ На сколько процентов                 Тут столько же пробелов, сколько осталось до
+ выполнены задачи                     завершения выполнения всех задач
+          |                                                |
+ \_\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_\_  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+/                   \(\backslash\)/                                                                             \(\backslash\)
+<h6>###############                                                                                21%</h6>
+Hello, World!                                                                                        \_/
+\_\_\_\_\_\_\_\_\_\_\_/                                                                                         |
+      |                                                                                      Процент 
+      выполнения
+Имя текущей задачи                                                                           всех задач
+\end{DoxyCode}
+
+
+Задач не должно быть больше чем 100, если их меньше, то полоска будет завершена до 100.
+
+Когда выполнение закончится, то имя последней задачи будет заменено на значание P\+:\+F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE
+
+Консоль очищается, после того, как пройдёт время из P\+:\+D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+C\+I\+I\+Wars/\+Console\+Graphics/Loading\+Bar.\+cs\end{DoxyCompactItemize}

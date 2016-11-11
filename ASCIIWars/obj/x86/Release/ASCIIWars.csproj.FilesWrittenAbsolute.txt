@@ -1,0 +1,8 @@
+/Users/dmitmel/Projects/CSharp/ASCIIWars/ASCIIWars/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/dmitmel/Projects/CSharp/ASCIIWars/build/Release/assets/asciiArts/title.txt
+/Users/dmitmel/Projects/CSharp/ASCIIWars/build/Release/assets/data/situations.json
+/Users/dmitmel/Projects/CSharp/ASCIIWars/build/Release/assets/funny-task-names.txt
+/Users/dmitmel/Projects/CSharp/ASCIIWars/build/Release/ASCIIWars.exe
+/Users/dmitmel/Projects/CSharp/ASCIIWars/ASCIIWars/obj/x86/Release/ASCIIWars.exe
+/Users/dmitmel/Projects/CSharp/ASCIIWars/build/Release/assets/data/items.json
+/Users/dmitmel/Projects/CSharp/ASCIIWars/build/Release/assets/data/funny-task-names.txt

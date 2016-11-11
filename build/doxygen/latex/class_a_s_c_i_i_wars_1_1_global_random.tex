@@ -1,0 +1,42 @@
+\hypertarget{class_a_s_c_i_i_wars_1_1_global_random}{}\section{Класс A\+S\+C\+I\+I\+Wars.\+Global\+Random}
+\label{class_a_s_c_i_i_wars_1_1_global_random}\index{A\+S\+C\+I\+I\+Wars.\+Global\+Random@{A\+S\+C\+I\+I\+Wars.\+Global\+Random}}
+
+
+Глобальный контейнер для генератора рандамных чисел.  
+
+
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_global_random_ad40c313d502809aad3398da0e8d1d8e6}{}\label{class_a_s_c_i_i_wars_1_1_global_random_ad40c313d502809aad3398da0e8d1d8e6} 
+static Random \hyperlink{class_a_s_c_i_i_wars_1_1_global_random_ad40c313d502809aad3398da0e8d1d8e6}{New\+Random\+Generator} ()
+\begin{DoxyCompactList}\small\item\em Создаёт новый генератор и возвращает его. \end{DoxyCompactList}\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_global_random_a781ebf6e30b09d6b5ec1f97a2337564b}{}\label{class_a_s_c_i_i_wars_1_1_global_random_a781ebf6e30b09d6b5ec1f97a2337564b} 
+static Random \hyperlink{class_a_s_c_i_i_wars_1_1_global_random_a781ebf6e30b09d6b5ec1f97a2337564b}{New\+Random\+Generator} (int seed)
+\begin{DoxyCompactList}\small\item\em Создаёт новый генератор с сидом и возвращает его. \end{DoxyCompactList}\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_global_random_a3cf1ee8b1aedce87e6364cf8b6e91156}{}\label{class_a_s_c_i_i_wars_1_1_global_random_a3cf1ee8b1aedce87e6364cf8b6e91156} 
+static int \hyperlink{class_a_s_c_i_i_wars_1_1_global_random_a3cf1ee8b1aedce87e6364cf8b6e91156}{Next} (int max\+Value)
+\begin{DoxyCompactList}\small\item\em То же самое, что и {\ttfamily Global\+Random.\+Random\+Generator.\+Next(max)}. \end{DoxyCompactList}\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_global_random_ab59b93741055d3a3b6fae155946355f3}{}\label{class_a_s_c_i_i_wars_1_1_global_random_ab59b93741055d3a3b6fae155946355f3} 
+static int \hyperlink{class_a_s_c_i_i_wars_1_1_global_random_ab59b93741055d3a3b6fae155946355f3}{Next} (int min\+Value, int max\+Value)
+\begin{DoxyCompactList}\small\item\em То же самое, что и {\ttfamily Global\+Random.\+Random\+Generator.\+Next(min, max)}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_s_c_i_i_wars_1_1_global_random_a9d81774ce986f79fb427fd575463d63b}{}\label{class_a_s_c_i_i_wars_1_1_global_random_a9d81774ce986f79fb427fd575463d63b} 
+static Random {\bfseries Random\+Generator}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Глобальный контейнер для генератора рандамных чисел. 
+
+Базирован на функциями из стандартной библиотеки Haskell\textquotesingle{}я\+:
+\begin{DoxyItemize}
+\item {\ttfamily get\+Std\+Gen} -\/ \href{http://hackage.haskell.org/package/random-1.1/docs/System-Random.html#v:getStdGen}{\tt http\+://hackage.\+haskell.\+org/package/random-\/1.\+1/docs/\+System-\/\+Random.\+html\#v\+:get\+Std\+Gen}
+\item {\ttfamily new\+Std\+Gen} -\/ \href{http://hackage.haskell.org/package/random-1.1/docs/System-Random.html#v:newStdGen}{\tt http\+://hackage.\+haskell.\+org/package/random-\/1.\+1/docs/\+System-\/\+Random.\+html\#v\+:new\+Std\+Gen} 
+\end{DoxyItemize}
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+C\+I\+I\+Wars/Global\+Random.\+cs\end{DoxyCompactItemize}

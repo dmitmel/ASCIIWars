@@ -1,0 +1,21 @@
+{
+    "armors": {
+        "woodenArmor": {"name": "Деревянная броня", "description": "Сделана из дерева. Осторожно с огнём!", "defense": 10},
+        "XxxSuperArmorXxx": {"name": "Супер MLG броня", "description": "666 Illuminaty Confirmed!", "defense": 9001}
+    },
+    "weapons": {
+        "woodenSword": {"name": "Деревянный меч", "description": "Сделан из дерева. Осторожно с огнём!", "damage": 10},
+        "XxxSuperSwordXxx": {"name": "Супер MLG меч", "description": "666 Illuminaty Confirmed!", "damage": 9001}
+    },
+    "healthPotions": {
+        "smallHealthPotion": {"name": "Маленькое зелье лечения", "healthRestorage": 50},
+        "XxxSuperDoritosXxx": {"name": "Супер MLG Доритос", "healthRestorage": 9001}
+    },
+    "healthBoosters": {
+        "XxxSuperWeedXxx": {"name": "Супер MLG марихуана", "healthBoost": 9001}
+    },
+    "materials": {
+        "wood": {"name": "Дерево", "description": "Базовый материал крафта."},
+        "stick": {"name": "Палка", "description": "Используется для создания деревянных инструментов."}
+    }
+}

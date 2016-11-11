@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ASCIIWars: Класс ASCIIWars.ConsoleGraphics.LoadingBar</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ASCIIWars
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_a_s_c_i_i_wars.html">ASCIIWars</a></li><li class="navelem"><a class="el" href="namespace_a_s_c_i_i_wars_1_1_console_graphics.html">ConsoleGraphics</a></li><li class="navelem"><a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar.html">LoadingBar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс ASCIIWars.ConsoleGraphics.LoadingBar</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Печатает символьную полоску загрузки.  
+ <a href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar.html#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a608770219ead82a4ce54ad22f6c3ba38"><td class="memItemLeft" align="right" valign="top"><a id="a608770219ead82a4ce54ad22f6c3ba38"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (<a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task.html">Task</a>[] tasks)</td></tr>
+<tr class="separator:a608770219ead82a4ce54ad22f6c3ba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Печатает символьную полоску загрузки. </p>
+<p>Загрузка выглядит примерно так: </p><div class="fragment"><div class="line"> Тут столько же решёток,</div><div class="line"> На сколько процентов                 Тут столько же пробелов, сколько осталось до</div><div class="line"> выполнены задачи                     завершения выполнения всех задач</div><div class="line">          |                                                |</div><div class="line"> _________|_________  _____________________________________|_______________________________________</div><div class="line">/                   \/                                                                             \</div><div class="line">&lt;h6&gt;###############                                                                                21%&lt;/h6&gt;</div><div class="line">Hello, World!                                                                                        _/</div><div class="line">___________/                                                                                         |</div><div class="line">      |                                                                                      Процент выполнения</div><div class="line">Имя текущей задачи                                                                           всех задач</div></div><!-- fragment --><p>Задач не должно быть больше чем 100, если их меньше, то полоска будет завершена до 100.</p>
+<p>Когда выполнение закончится, то имя последней задачи будет заменено на значание P:FINISHED_TITLE</p>
+<p>Консоль очищается, после того, как пройдёт время из P:DELAY_BEFORE_CLEARING</p>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>ASCIIWars/ConsoleGraphics/LoadingBar.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>
