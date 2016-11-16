@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['starter_5fcoins',['STARTER_COINS',['../class_a_s_c_i_i_wars_1_1_game_1_1_player.html#af33b6af0d723918290a4a38aa4a6fb66',1,'ASCIIWars::Game::Player']]]
+  ['finished_5ftitle',['FINISHED_TITLE',['../class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar.html#aa75543e5166964ca32750bb66591ab3d',1,'ASCIIWars::ConsoleGraphics::LoadingBar']]]
 ];

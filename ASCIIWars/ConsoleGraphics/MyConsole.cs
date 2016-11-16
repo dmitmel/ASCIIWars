@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace ASCIIWars.ConsoleGraphics {
     public static class MyConsole {
         public const string ANSI_RESET = "\x1B[0m";

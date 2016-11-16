@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max_5finventory_5fsize',['MAX_INVENTORY_SIZE',['../class_a_s_c_i_i_wars_1_1_game_1_1_player.html#a1cc8a05398a717bcf8c5a0ebd2ea0747',1,'ASCIIWars::Game::Player']]],
-  ['maxhealth',['maxHealth',['../class_a_s_c_i_i_wars_1_1_game_1_1_player.html#acfd121f865f0e5a87f177e93c82feadc',1,'ASCIIWars::Game::Player']]]
+  ['emptyaction',['EmptyAction',['../class_a_s_c_i_i_wars_1_1_util_1_1_lambdas.html#aab7ecf777227e68d10c96568758f6782',1,'ASCIIWars::Util::Lambdas']]],
+  ['enemies',['enemies',['../class_a_s_c_i_i_wars_1_1_game_1_1_situation_container.html#ae83c07e8b05da394daebe44f00e4f4d2',1,'ASCIIWars::Game::SituationContainer']]]
 ];

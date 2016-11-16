@@ -1,10 +1,14 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghijmnoprstw",
-  1: "abcefghijmnpstw",
+  0: "_abcdefghijlmnopqrstuw",
+  1: "abcdefghijlmnpqstw",
   2: "a",
-  3: "acdors",
-  4: "acdhims"
+  3: "abcdegilmpqs",
+  4: "acdefghijlmnoprstw",
+  5: "_abcdefghilmnopqrst",
+  6: "cim",
+  7: "beilmnsu",
+  8: "adhmnrstw"
 };
 
 var indexSectionNames =
@@ -12,8 +16,12 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "functions",
-  4: "variables"
+  3: "files",
+  4: "functions",
+  5: "variables",
+  6: "enums",
+  7: "enumvalues",
+  8: "properties"
 };
 
 var indexSectionLabels =
@@ -21,7 +29,11 @@ var indexSectionLabels =
   0: "Указатель",
   1: "Классы",
   2: "Пространства имен",
-  3: "Функции",
-  4: "Переменные"
+  3: "Файлы",
+  4: "Функции",
+  5: "Переменные",
+  6: "Перечисления",
+  7: "Элементы перечислений",
+  8: "Свойства"
 };
 

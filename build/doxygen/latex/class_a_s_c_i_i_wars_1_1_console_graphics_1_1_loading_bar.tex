@@ -2,43 +2,89 @@
 \label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar}\index{A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar}}
 
 
-Печатает символьную полоску загрузки.  
+Рисует символьную полоску загрузки.  
 
 
 \subsection*{Открытые статические члены}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38} 
-static void {\bfseries Load} (\hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task}\mbox{[}$\,$\mbox{]} tasks)
+static void \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38}{Load} (\hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task}\mbox{[}$\,$\mbox{]} tasks)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a5a407d4e78a5d3789ba0348b219b14ae}{Print\+Progress\+Of} (string task\+Name, int complete\+Percent)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d}{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE} = \char`\"{}Загрузка завершена!\char`\"{}
+\item 
+const int \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb}{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG} = 1500
 \end{DoxyCompactItemize}
 
 
 \subsection{Подробное описание}
-Печатает символьную полоску загрузки. 
+Рисует символьную полоску загрузки. 
 
-Загрузка выглядит примерно так\+: 
+
+\begin{DoxyItemize}
+\item Загрузка выглядит примерно так\+: 
 \begin{DoxyCode}
- Тут столько же решёток,
- На сколько процентов                 Тут столько же пробелов, сколько осталось до
- выполнены задачи                     завершения выполнения всех задач
+Тут столько же решёток,
+На сколько процентов                 Тут столько же пробелов, сколько осталось до
+выполнены задачи                     завершения выполнения всех задач
           |                                                |
  \_\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_\_  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 /                   \(\backslash\)/                                                                             \(\backslash\)
-<h6>###############                                                                                21%</h6>
-Hello, World!                                                                                        \_/
-\_\_\_\_\_\_\_\_\_\_\_/                                                                                         |
-      |                                                                                      Процент 
-      выполнения
+#####################                                                                                21%
+Hello, World!                                                                                        \(\backslash\)\_/
+\(\backslash\)\_\_\_\_\_\_\_\_\_\_\_/                                                                                         |
+      |                                                                                      Процент
+       выполнения
 Имя текущей задачи                                                                           всех задач
 \end{DoxyCode}
 
+\item Задач не должно быть больше чем 100. Если их меньше чем 100, то полоска будет завершена до 100.
+\item Когда выполнение закончится, то имя последней задачи будет заменено на значание \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d}{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}
+\item Консоль очищается, после того, как пройдёт время из \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb}{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}
+\end{DoxyItemize}
 
-Задач не должно быть больше чем 100, если их меньше, то полоска будет завершена до 100.
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task} 
+\end{DoxySeeAlso}
 
-Когда выполнение закончится, то имя последней задачи будет заменено на значание P\+:\+F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE
 
-Консоль очищается, после того, как пройдёт время из P\+:\+D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG
+\subsection{Методы}
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a608770219ead82a4ce54ad22f6c3ba38} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!Load@{Load}}
+\index{Load@{Load}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily static void A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+Load (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task} \mbox{[}$\,$\mbox{]}}]{tasks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a5a407d4e78a5d3789ba0348b219b14ae}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a5a407d4e78a5d3789ba0348b219b14ae} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!Print\+Progress\+Of@{Print\+Progress\+Of}}
+\index{Print\+Progress\+Of@{Print\+Progress\+Of}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{Print\+Progress\+Of()}{PrintProgressOf()}}
+{\footnotesize\ttfamily static void A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+Print\+Progress\+Of (\begin{DoxyParamCaption}\item[{string}]{task\+Name,  }\item[{int}]{complete\+Percent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG@{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}}
+\index{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG@{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}{DELAY\_BEFORE\_CLEARING}}
+{\footnotesize\ttfamily const int A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG = 1500\hspace{0.3cm}{\ttfamily [private]}}
+
+Время в миллисекундах, которое надо ждать, чтоб полоска загрузки очислилась, после окончания загрузки. \hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE@{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}}
+\index{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE@{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}{FINISHED\_TITLE}}
+{\footnotesize\ttfamily const string A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE = \char`\"{}Загрузка завершена!\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+Строка, котороя будет выведена на месте последней задачи, при окончании загрузки. 
 
 Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
 \item 
-A\+S\+C\+I\+I\+Wars/\+Console\+Graphics/Loading\+Bar.\+cs\end{DoxyCompactItemize}
+A\+S\+C\+I\+I\+Wars/\+Console\+Graphics/\hyperlink{_loading_bar_8cs}{Loading\+Bar.\+cs}\end{DoxyCompactItemize}

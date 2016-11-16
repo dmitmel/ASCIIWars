@@ -1,48 +1,57 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ASCIIWars.ConsoleGraphics {
     /**
-     * <summary>
-     * Утилита для рисования меню с выбором. Выбор можно сдвигать
-     * вверх с помощью стрелки вверх, и вниз с помощью стрелки вниз.
-     * Выбор подтверждается с помощью Enter'а.
-     * </summary>
+     * @short Утилита для рисования меню с выбором. Выбор можно сдвигать
+     *        вверх с помощью стрелки вверх, и вниз с помощью стрелки вниз.
+     *        Выбор подтверждается с помощью Enter'а.
      * 
-     * <remarks>
-     * <para>Меню выглядит примерно так:
-     * <code><![CDATA[
+     * Меню выглядит примерно так:
+     * ```
      *  Какую таблетку ты выберешь?     <--- Заголовок, может отсутствовать
      *    никакую --|
      *    красную   |-- Элементы, который можно выбрать
      *  > синюю   --|
      *  ^
      * Стрелка, которая указывает на текущий выбранный елемент
-     * ]]></code></para>
+     * ```
      * 
-     * <para>Если курсор был сдвинут вверх в самом верхнем положении,
+     * Если курсор был сдвинут вверх в самом верхнем положении,
      * или вниз в самом нижнем положении, он буддет поремещён на самую
-     * верхнию или нижнию позицию.</para>
+     * верхнию или нижнию позицию.
      * </remarks>
      */
     public static class MenuDrawer {
+        /// @short Показывает меню, у которого есть одна кнопка (`OK`) для
+        ///        подтверждения.
+        /// @param info Заголовок меню.
         public static void ShowInfoDialog(string info) {
             Select(info, new string[] { "OK" });
         }
 
+        /// @short Принимает словарь с названиями действиями и callback'ами.
+        /// 
+        /// При выбирании действия (например, `foo bar!`), будет вызван
+        /// callback, асооциированный с этим действием (например,
+        /// `() => Console.WriteLine("Hello World!")`).
         public static void Select(Dictionary<string, Action> actions) {
             string[] choices = actions.Keys.ToArray();
             string choice = Select(choices);
             actions[choice].Invoke();
         }
 
+        /// Действует также, как #Select(Dictionary<string, Action>), но
+        /// также принимает заголовок меню.
         public static void Select(string prompt, Dictionary<string, Action> actions) {
             string[] choices = actions.Keys.ToArray();
             string choice = Select(prompt, choices);
             actions[choice].Invoke();
         }
 
+        /// @short Принимает массив с названиями действий меню и заголовок меню.
+        /// @returns Выбраный заголовок.
         public static string Select(string prompt, params string[] choices) {
             Console.WriteLine($" {MyConsole.ANSI_ITALIC}{prompt}{MyConsole.ANSI_RESET}");
             string result = Select(choices);
@@ -52,15 +61,15 @@ namespace ASCIIWars.ConsoleGraphics {
             return result;
         }
 
+        /// @short Принимает массив с названиями действий меню.
+        /// @returns Выбраный заголовок.
         public static string Select(params string[] choices) {
             int selectedIndex = 0;
             ConsoleKey pressedKey = ConsoleKey.NoName;
 
-            // Отступаем вниз, чтобы строчка 19 смогла выполниться нормально
             MyConsole.MoveCursorDown(choices.Length);
 
             while (pressedKey != ConsoleKey.Enter) {
-                // 19
                 MyConsole.MoveCursorToBeginingOfLine();
                 MyConsole.MoveCursorUp(choices.Length);
 

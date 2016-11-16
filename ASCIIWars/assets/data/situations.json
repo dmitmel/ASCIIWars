@@ -10,7 +10,8 @@
         "alchemist": {"type": "merchant", "objectID": "alchemist"},
         "materialsMerchant": {"type": "merchant", "objectID": "materialsMerchant"},
         "gunner": {"type": "merchant", "objectID": "gunner"},
-        "townWorkshop": {"type": "craftingPlace", "objectID": "townWorkshop"}
+        "townWorkshop": {"type": "craftingPlace", "objectID": "townWorkshop"},
+        "myCoolQuest": {"type": "quest", "objectID": "myCoolQuest"}
     },
     "branches": {
         "onEnter": {
@@ -38,7 +39,8 @@
             "nextSituations": [
                 {"title": "Выйти на рынок", "IDs": ["marketSquare"]},
                 {"title": "Пойти в Городскую мастерскую", "IDs": ["townWorkshop"]},
-                {"title": "Вернуться к выходу из пещеры", "IDs": ["caveExit"]}
+                {"title": "Вернуться к выходу из пещеры", "IDs": ["caveExit"]},
+                {"title": "My Cool Quest", "IDs": ["myCoolQuest"]}
             ]
         },
         "marketSquare": {
@@ -107,6 +109,15 @@
                 {"ingredients": [{"id": "wood", "type": "material", "count": 2}, {"id": "stick", "type": "material", "count": 1}], "result": {"id": "woodenSword", "type": "weapon", "count": 1}}
             ],
             "nextSituations": ["town"]
+        }
+    },
+    "quests": {
+        "myCoolQuest": {
+            "holderName": "Cool Quest Hoolder",
+            "questItem": {"type": "healthPotion", "id": "smallHealthPotion", "count": 2},
+            "coinsReward": 999,
+            "itemsReward": [{"type": "armor", "id": "woodenArmor", "count": 1}, {"type": "weapon", "id": "woodenSword", "count": 1}],
+            "situationsOnCancel": ["town"]
         }
     }
 }

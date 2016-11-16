@@ -3,7 +3,6 @@ using System.Threading;
 #if !DEBUG
 using System.IO;
 using System.Linq;
-using ASCIIWars.Game;
 #endif
 
 namespace ASCIIWars.ConsoleGraphics {
@@ -23,15 +22,12 @@ namespace ASCIIWars.ConsoleGraphics {
 
 #if !DEBUG
     /**
-     * <summary>
-     * Загружает задачи из файла со смешными названиями для задач. 
-     * В файле содержатся только имена, а класс преобразует их
-     * задачи со случайным временем от <see cref="P:MIN_TASK_DELAY"/>
-     * до <see cref="P:MAX_TASK_DELAY"/>.
-     * </summary>
-     * 
-     * <seealso cref="T:Task"/>
-     * <seealso cref="M:LoadingBar.Load(List{Task})"/>
+     * @short Загружает задачи из файла со смешными названиями для задач. 
+     *        В файле содержатся только имена, а класс преобразует их
+     *        задачи со случайным временем от #MIN_TASK_DELAY
+     *        до #MAX_TASK_DELAY.
+     * @see Task
+     * @see LoadingBar.Load
      */
     public static class FunnyTasksLoader {
         /// Минимальное время, которое может потробоваться на выполнение загруженой задачи.
@@ -49,39 +45,41 @@ namespace ASCIIWars.ConsoleGraphics {
 #endif
 
     /**
-     * <summary>
-     * Печатает символьную полоску загрузки.
-     * </summary>
+     * @short Рисует символьную полоску загрузки.
      * 
-     * <remarks>
-     * <para>Загрузка выглядит примерно так:
-     * <code>
-     *  Тут столько же решёток,
-     *  На сколько процентов                 Тут столько же пробелов, сколько осталось до
-     *  выполнены задачи                     завершения выполнения всех задач
-     *           |                                                |
-     *  _________|_________  _____________________________________|_______________________________________
-     * /                   \/                                                                             \
-     * #####################                                                                                21%
-     * Hello, World!                                                                                        \_/
-     * \___________/                                                                                         |
-     *       |                                                                                      Процент выполнения
-     * Имя текущей задачи                                                                           всех задач
-     * </code></para>
+     * - Загрузка выглядит примерно так:
+     *   ```nohighlight
+     *   Тут столько же решёток,
+     *   На сколько процентов                 Тут столько же пробелов, сколько осталось до
+     *   выполнены задачи                     завершения выполнения всех задач
+     *             |                                                |
+     *    _________|_________  _____________________________________|_______________________________________
+     *   /                   \/                                                                             \
+     *   #####################                                                                                21%
+     *   Hello, World!                                                                                        \_/
+     *   \___________/                                                                                         |
+     *         |                                                                                      Процент выполнения
+     *   Имя текущей задачи                                                                           всех задач
+     *   ```
      * 
-     * <para>Задач не должно быть больше чем 100, если их меньше,
-     * то полоска будет завершена до 100.</para>
+     * - Задач не должно быть больше чем 100. Если их меньше чем 100,
+     *   то полоска будет завершена до 100.
      * 
-     * <para>Когда выполнение закончится, то имя последней задачи
-     * будет заменено на значание <see cref="P:FINISHED_TITLE"/></para>
+     * - Когда выполнение закончится, то имя последней задачи
+     *   будет заменено на значание #FINISHED_TITLE
      * 
-     * <para>Консоль очищается, после того, как пройдёт время из
-     * <see cref="P:DELAY_BEFORE_CLEARING"/></para>
-     * </remarks>
+     * - Консоль очищается, после того, как пройдёт время из
+     *   #DELAY_BEFORE_CLEARING
+     * 
+     * @see Task
      */
     public static class LoadingBar {
+        /// Строка, котороя будет выведена на месте последней задачи,
+        /// при окончании загрузки.
         const string FINISHED_TITLE = "Загрузка завершена!";
 #if !DEBUG
+        /// Время в миллисекундах, которое надо ждать, чтоб полоска
+        /// загрузки очислилась, после окончания загрузки.
         const int DELAY_BEFORE_CLEARING = 1500;
 #endif
 
@@ -90,9 +88,6 @@ namespace ASCIIWars.ConsoleGraphics {
                 throw new ArgumentException("Слишком много задач");
 
             int completePercent = 0;
-            // Добавляем новою строку, для того, чтобы функция PrintProgressOf
-            // смогла "отступить" на 1 линию вверх при 0%
-            Console.WriteLine();
 
             foreach (Task task in tasks) {
                 PrintProgressOf(task.name, completePercent);
@@ -107,18 +102,19 @@ namespace ASCIIWars.ConsoleGraphics {
 #endif
             // Полоска загрузки как раз занимает 2 линии
             MyConsole.ClearLine();  // Очищаем линию с текстом о завершении
-            MyConsole.MoveCursorUp(1);
+            MyConsole.MoveCursorDown(1);
             MyConsole.ClearLine();  // Очищаем линию с полоской
+            MyConsole.MoveCursorUp(1);
         }
 
         static void PrintProgressOf(string taskName, int completePercent) {
-            MyConsole.MoveCursorUp(1);
-            MyConsole.MoveCursorToBeginingOfLine();
             Console.Write(new string('#', completePercent));
             Console.Write(new string(' ', 100 - completePercent));
             Console.WriteLine($" {completePercent}%");
             MyConsole.ClearLine();
             Console.Write(taskName);
+            MyConsole.MoveCursorUp(1);
+            MyConsole.MoveCursorToBeginingOfLine();
         }
     }
 }

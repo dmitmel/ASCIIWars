@@ -46,11 +46,17 @@
     <Compile Include="Game\Situations.cs" />
     <Compile Include="GlobalRandom.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Game\FightController.cs" />
     <Compile Include="Game\Items.cs" />
     <Compile Include="Game\Assets.cs" />
     <Compile Include="Util\Collections.cs" />
     <Compile Include="Util\Dictionaries.cs" />
+    <Compile Include="Game\SituationControllers.cs" />
+    <Compile Include="Game\EnemySituationController.cs" />
+    <Compile Include="Game\MerchantSituationController.cs" />
+    <Compile Include="Game\CraftingPlaceSituationController.cs" />
+    <Compile Include="Game\BranchSituationController.cs" />
+    <Compile Include="Game\QuestSituationController.cs" />
+    <Compile Include="Util\Lambdas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\asciiArts\title.txt">

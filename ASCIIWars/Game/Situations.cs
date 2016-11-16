@@ -14,7 +14,9 @@
 // limitations under the License.
 //
 
+using System;
 using System.Collections.Generic;
+using ASCIIWars.Util;
 
 namespace ASCIIWars.Game {
     public class Situation {
@@ -25,6 +27,19 @@ namespace ASCIIWars.Game {
     public class NextSituation {
         public string title;
         public List<string> IDs;
+    }
+
+    public class ItemReference {
+        public string id;
+        public string type;
+        public int count;
+
+        Item _refrencedItem;
+        public Item ReferencedItemIn(ItemContainer itemContainer) {
+            if (_refrencedItem == null)
+                _refrencedItem = itemContainer.GetByTypeAndID(type, id);
+            return _refrencedItem;
+        }
     }
 
     public class Branch {
@@ -41,7 +56,7 @@ namespace ASCIIWars.Game {
         public int health;
         public int attack;
         public int coinsReward;
-        public List<object> itemsReward;
+        public List<ItemReference> drop;
         public List<string> situationsOnDefeat;
         public List<string> situationsOnRunAway;
     }
@@ -60,15 +75,9 @@ namespace ASCIIWars.Game {
         public List<string> nextSituations;
     }
 
-    public class CraftingItem {
-        public string id;
-        public string type;
-        public int count;
-    }
-
     public class Craft {
-        public List<CraftingItem> ingredients;
-        public CraftingItem result;
+        public List<ItemReference> ingredients;
+        public ItemReference result;
     }
 
     public class CraftingPlace {
@@ -77,13 +86,25 @@ namespace ASCIIWars.Game {
         public List<string> nextSituations;
     }
 
+    public class Quest {
+        public string holderName;
+        public ItemReference questItem;
+        public int coinsReward;
+        public List<ItemReference> itemsReward;
+        public List<string> situationsOnCancel;
+    }
+
     public class SituationContainer {
         public Dictionary<string, Situation> situations;
         public Dictionary<string, Branch> branches;
         public Dictionary<string, Enemy> enemies;
         public Dictionary<string, Merchant> merchants;
         public Dictionary<string, CraftingPlace> craftingPlaces;
+        public Dictionary<string, Quest> quests;
 
+        public Situation RandomSituationByIDs(List<string> IDs) {
+            return GetSituation(IDs.RandomElement());
+        }
         public Situation GetSituation(string id) {
             return situations[id];
         }
@@ -101,7 +122,11 @@ namespace ASCIIWars.Game {
         }
 
         public CraftingPlace GetCraftingPlace(string id) {
-            return craftingPlaces[id]; 
+            return craftingPlaces[id];
+        }
+
+        public Quest GetQuest(string id) {
+            return quests[id];
         }
     }
 }

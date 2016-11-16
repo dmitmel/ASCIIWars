@@ -1,6 +1,14 @@
 var searchData=
 [
-  ['inventory',['inventory',['../class_a_s_c_i_i_wars_1_1_game_1_1_player.html#a04acfaa196162f89bfae7aee5ec45480',1,'ASCIIWars::Game::Player']]],
-  ['item',['Item',['../class_a_s_c_i_i_wars_1_1_game_1_1_item.html',1,'ASCIIWars::Game']]],
-  ['itemcontainer',['ItemContainer',['../class_a_s_c_i_i_wars_1_1_game_1_1_item_container.html',1,'ASCIIWars::Game']]]
+  ['handlesituation',['HandleSituation',['../class_a_s_c_i_i_wars_1_1_game_1_1_branch_situation_controller.html#abf7662c8744efb91a97ad3aa382f47c7',1,'ASCIIWars.Game.BranchSituationController.HandleSituation()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_crafting_place_situation_controller.html#a7e9f8549aa179c520a21039882cea3d7',1,'ASCIIWars.Game.CraftingPlaceSituationController.HandleSituation()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_enemy_situation_controller.html#a90db7af0d04e0ca4ee9231f63c0a6dd3',1,'ASCIIWars.Game.EnemySituationController.HandleSituation()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_merchant_situation_controller.html#a4048d09077a393377801bf3f3697115b',1,'ASCIIWars.Game.MerchantSituationController.HandleSituation()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_quest_situation_controller.html#aca719e6a0e79c492e212358b0bb0bc24',1,'ASCIIWars.Game.QuestSituationController.HandleSituation()'],['../interface_a_s_c_i_i_wars_1_1_game_1_1_situation_controller.html#a2cf0359dfc1683beb63f0dfed1c372e6',1,'ASCIIWars.Game.SituationController.HandleSituation()']]],
+  ['health',['health',['../class_a_s_c_i_i_wars_1_1_game_1_1_player.html#a8f364a47ef452b6c99bc13b7bdaae7ca',1,'ASCIIWars.Game.Player.health()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_enemy.html#a9240cccb69253549bf7d72620a3c9171',1,'ASCIIWars.Game.Enemy.health()']]],
+  ['healthboost',['healthBoost',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_health_booster.html#a28beed5117608087899c78103f3f8ba4',1,'ASCIIWars.Game.JSONHealthBooster.healthBoost()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_health_booster.html#abd6f83cc8e561198c5939ba4a20fd826',1,'ASCIIWars.Game.HealthBooster.healthBoost()']]],
+  ['healthbooster',['HealthBooster',['../class_a_s_c_i_i_wars_1_1_game_1_1_health_booster.html',1,'ASCIIWars::Game']]],
+  ['healthbooster',['HealthBooster',['../class_a_s_c_i_i_wars_1_1_game_1_1_health_booster.html#ac7796979395fc12db8b4a8d9a9ba7d7e',1,'ASCIIWars::Game::HealthBooster']]],
+  ['healthboosters',['healthBoosters',['../class_a_s_c_i_i_wars_1_1_game_1_1_item_container.html#aaecb48567ec96981ee40734e45f3339b',1,'ASCIIWars::Game::ItemContainer']]],
+  ['healthpotion',['HealthPotion',['../class_a_s_c_i_i_wars_1_1_game_1_1_health_potion.html',1,'ASCIIWars::Game']]],
+  ['healthpotion',['HealthPotion',['../class_a_s_c_i_i_wars_1_1_game_1_1_health_potion.html#a8f1763067ff0af22657b7447fe96cc66',1,'ASCIIWars::Game::HealthPotion']]],
+  ['healthpotions',['healthPotions',['../class_a_s_c_i_i_wars_1_1_game_1_1_item_container.html#a84c795ebe8785d1d14dad75b7670f68a',1,'ASCIIWars::Game::ItemContainer']]],
+  ['healthrestorage',['healthRestorage',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_health_potion.html#af1294529b5419e6e13cbec52087c8a17',1,'ASCIIWars.Game.JSONHealthPotion.healthRestorage()'],['../class_a_s_c_i_i_wars_1_1_game_1_1_health_potion.html#aa337067f250678b0825d86fc3e2868c5',1,'ASCIIWars.Game.HealthPotion.healthRestorage()']]],
+  ['holdername',['holderName',['../class_a_s_c_i_i_wars_1_1_game_1_1_quest.html#a20f65b8cadc60a977fe96205fecb7ba3',1,'ASCIIWars::Game::Quest']]]
 ];

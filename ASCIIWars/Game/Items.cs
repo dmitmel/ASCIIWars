@@ -77,6 +77,14 @@ namespace ASCIIWars.Game {
             return new Material(id, materialDefinition.name, materialDefinition.description);
         }
 
+        public Tuple<Item, int> ResolveReferenceAndCount(ItemReference reference) {
+            return Tuple.Create(ResolveReference(reference), reference.count);
+        }
+
+        public Item ResolveReference(ItemReference reference) {
+            return reference.ReferencedItemIn(this);
+        }
+
         public Item GetByTypeAndID(string itemType, string itemID) {
             switch (itemType) {
                 case "armor":

@@ -1,4 +1,4 @@
-﻿
+
 //
 //  Copyright (c) 2016  Drimachine.org
 //
@@ -20,11 +20,11 @@ using System.IO;
 
 namespace ASCIIWars.Game {
     /**
-     * \short Контейнер ассетов. Хранит их по групам. В каждой
+     * @short Контейнер ассетов. Хранит их по групам. В каждой
      *        группе находятся файлы ассетов.
      * 
      * В представлении файловой системы выглядит так:
-     * \code
+     * ```
      * > assetsDirectory/
      * >     assetGroup1/
      * >         asset1.txt
@@ -32,10 +32,10 @@ namespace ASCIIWars.Game {
      * >     assetGroup2/
      * >         asset1.png
      * >         asset2.mp3
-     * \endcode
+     * ```
      * 
-     * \see AssetGroup
-     * \see Asset
+     * @see AssetGroup
+     * @see Asset
      */
     public class AssetContainer {
         public readonly Dictionary<string, AssetGroup> assetGroups = new Dictionary<string, AssetGroup>();
@@ -70,11 +70,10 @@ namespace ASCIIWars.Game {
     }
 
     /**
-     * \short Хранит файлы с ассетами.
+     * @short Хранит файлы с ассетами.
      * 
      * В представлении файловой системы выглядит так:
-     * \code
-     * \b abc
+     * ```
      * assetsDirectory/
      * >     assetGroup1/
      * >         asset1.txt
@@ -82,10 +81,10 @@ namespace ASCIIWars.Game {
      *     assetGroup2/
      *         asset1.png
      *         asset2.mp3
-     * \endcode
+     * ```
      * 
-     * \see AssetContainer
-     * \see Asset
+     * @see AssetContainer
+     * @see Asset
      */
     public class AssetGroup {
         public readonly string assetsDirectory;
@@ -109,10 +108,10 @@ namespace ASCIIWars.Game {
     }
 
     /**
-     * \short Ассет. Хранит текст ассета.
+     * @short Ассет. Хранит текст ассета.
      * 
-     * \see AssetContainer
-     * \see AssetGroup
+     * @see AssetContainer
+     * @see AssetGroup
      */
     public class Asset {
         public readonly string assetsDirectory;

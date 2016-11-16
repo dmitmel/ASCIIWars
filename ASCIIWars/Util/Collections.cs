@@ -25,16 +25,34 @@ namespace ASCIIWars.Util {
             return list[index];
         }
 
-        public static Dictionary<K, V> ToDictionary<T, K, V>(this IEnumerable<T> enumerable,
-                                                             Func<T, KeyValuePair<K, V>> action) {
+        public static Dictionary<K, V> ToDictionary<T, K, V>(this List<T> list, Func<T, KeyValuePair<K, V>> action) {
             var result = new Dictionary<K, V>();
-            foreach (T item in enumerable)
+            foreach (T item in list)
                 result.Add(action.Invoke(item));
             return result;
         }
 
         public static bool IsEmpty<T>(this IEnumerable<T> list) {
             return list.Count() == 0;
+        }
+
+        public static List<O> Map<I, O>(this List<I> list, Func<I, O> mapper) {
+            var result = new List<O>();
+            foreach (I val in list)
+                result.Add(mapper(val));
+            return result;
+        }
+
+        public static List<T> Filter<T>(this List<T> list, Func<T, bool> predicate) {
+            var result = new List<T>();
+            foreach (T val in list)
+                if (predicate(val))
+                result.Add(val);
+            return result;
+        }
+
+        public static string Join<T>(this List<T> list, string separator) {
+            return string.Join(separator, list);
         }
     }
 }

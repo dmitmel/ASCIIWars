@@ -38,7 +38,7 @@ namespace ASCIIWars.Util {
         }
 
         public static Dictionary<K, V> MakeDictionary<K, V>(params KeyValuePair<K, V>[] pairs) {
-            return pairs.ToDictionary(pair => pair);
+            return pairs.ToList().ToDictionary(pair => pair);
         }
 
         public static void Add<K, V>(this Dictionary<K, V> dictionary, KeyValuePair<K, V> pair) {

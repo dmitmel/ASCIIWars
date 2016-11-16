@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task',['Task',['../class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task.html',1,'ASCIIWars::ConsoleGraphics']]]
+  ['player',['Player',['../class_a_s_c_i_i_wars_1_1_game_1_1_player.html',1,'ASCIIWars::Game']]]
 ];

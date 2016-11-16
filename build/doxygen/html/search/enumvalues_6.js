@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['playerdied',['PlayerDied',['../namespace_a_s_c_i_i_wars_1_1_game.html#a26bea755310826ad76e09cc1ce0c5ecdaee1ded5ee510cf5f4c605debf346a9b2',1,'ASCIIWars::Game']]],
-  ['playerranaway',['PlayerRanAway',['../namespace_a_s_c_i_i_wars_1_1_game.html#a26bea755310826ad76e09cc1ce0c5ecda43a580f6f07e62dcd47e845137634a1e',1,'ASCIIWars::Game']]]
+  ['settings',['Settings',['../namespace_a_s_c_i_i_wars.html#a9b8588e75dba14ac63aa79a49dd5a4ebaf4f70727dc34561dfde1a3c529b6205c',1,'ASCIIWars']]],
+  ['showconsumable',['ShowConsumable',['../namespace_a_s_c_i_i_wars_1_1_game.html#a38949febfe4ff7d83568273830f42e5aad522e5cef00735497c26885b05b6ad60',1,'ASCIIWars::Game']]],
+  ['showinventory',['ShowInventory',['../namespace_a_s_c_i_i_wars_1_1_game.html#a38949febfe4ff7d83568273830f42e5aa5e035f78e07eda1a93846b8ea0e9589b',1,'ASCIIWars::Game']]],
+  ['showitem',['ShowItem',['../namespace_a_s_c_i_i_wars_1_1_game.html#a38949febfe4ff7d83568273830f42e5aafb91889eb4e48cf1ecb2b6f39405d724',1,'ASCIIWars::Game']]],
+  ['showselectable',['ShowSelectable',['../namespace_a_s_c_i_i_wars_1_1_game.html#a38949febfe4ff7d83568273830f42e5aa011a738f4f78ce6394f16784769a82c4',1,'ASCIIWars::Game']]]
 ];

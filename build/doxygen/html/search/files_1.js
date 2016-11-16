@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fightcontroller_2ecs',['FightController.cs',['../_fight_controller_8cs.html',1,'']]]
+  ['branchsituationcontroller_2ecs',['BranchSituationController.cs',['../_branch_situation_controller_8cs.html',1,'']]]
 ];

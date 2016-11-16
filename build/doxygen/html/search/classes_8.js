@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['jsonarmor',['JSONArmor',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_armor.html',1,'ASCIIWars::Game']]],
-  ['jsonhealthbooster',['JSONHealthBooster',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_health_booster.html',1,'ASCIIWars::Game']]],
-  ['jsonhealthpotion',['JSONHealthPotion',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_health_potion.html',1,'ASCIIWars::Game']]],
-  ['jsonmaterial',['JSONMaterial',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_material.html',1,'ASCIIWars::Game']]],
-  ['jsonweapon',['JSONWeapon',['../class_a_s_c_i_i_wars_1_1_game_1_1_j_s_o_n_weapon.html',1,'ASCIIWars::Game']]]
+  ['inventorycontroller',['InventoryController',['../class_a_s_c_i_i_wars_1_1_game_1_1_inventory_controller.html',1,'ASCIIWars::Game']]],
+  ['item',['Item',['../class_a_s_c_i_i_wars_1_1_game_1_1_item.html',1,'ASCIIWars::Game']]],
+  ['itemcontainer',['ItemContainer',['../class_a_s_c_i_i_wars_1_1_game_1_1_item_container.html',1,'ASCIIWars::Game']]],
+  ['itemreference',['ItemReference',['../class_a_s_c_i_i_wars_1_1_game_1_1_item_reference.html',1,'ASCIIWars::Game']]]
 ];

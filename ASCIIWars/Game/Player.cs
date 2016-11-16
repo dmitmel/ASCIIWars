@@ -1,4 +1,4 @@
-﻿//
+//
 //  Copyright (c) 2016  Drimachine.org
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ using System.Collections.Generic;
 
 namespace ASCIIWars.Game {
     /**
-     * \short Представляет игрока.
+     * @short Представляет игрока.
      * 
      * У игрока есть такие свойства:
      * - здоровье (#health)
@@ -36,40 +36,40 @@ namespace ASCIIWars.Game {
      *     (#STARTER_COINS)
      */
     public class Player {
-        /// \short Максимальное значение здоровья по умолчанию.
-        /// \see maxHealth
+        /// @short Максимальное значение здоровья по умолчанию.
+        /// @see maxHealth
         const int DEFAULT_MAX_HEALTH = 100;
-        /// \short Максимальный размер инвентаря.
-        /// \see inventory
+        /// @short Максимальный размер инвентаря.
+        /// @see inventory
         public const int MAX_INVENTORY_SIZE = 20;
-        /// \short Количество монет в начале игры.
-        /// \see coins
+        /// @short Количество монет в начале игры.
+        /// @see coins
         const int STARTER_COINS = 10;
 
-        /// \short Максимальное здоровье. Может увеличиваться в течении
+        /// @short Максимальное здоровье. Может увеличиваться в течении
         ///        игры с помощью #ASCIIWars.Game.HealthBooster.
-        /// \see health
+        /// @see health
         public int maxHealth = DEFAULT_MAX_HEALTH;
-        /// \short Уровень здоровья. Может регенерироваться в
+        /// @short Уровень здоровья. Может регенерироваться в
         ///        течении игры с помощью #ASCIIWars.Game.HealthPotion.
         public int health = DEFAULT_MAX_HEALTH;
-        /// \short Уровень атаки. Может увеличиваться в течении игры
+        /// @short Уровень атаки. Может увеличиваться в течении игры
         ///        с помощью #ASCIIWars.Game.Weapon.
         public int attack;
-        /// \short Уровень защиты. Может увеличиваться в течении игры
+        /// @short Уровень защиты. Может увеличиваться в течении игры
         ///        с помощью #ASCIIWars.Game.Armor.
         public int defense;
         /// Количество монет у игрока.
         public int coins = STARTER_COINS;
-        /// \short Инвентарь. Имеет ограничение по размеру (#MAX_INVENTORY_SIZE).
+        /// @short Инвентарь. Имеет ограничение по размеру (#MAX_INVENTORY_SIZE).
         public List<Item> inventory = new List<Item>();
 
         /**
-         * \short Добавляет предмет в инвентарь, с учётом максимального размера.
-         * \see inventory
-         * \see Item
-         * \see Item.OnAddToPlayerInventory(Player)
-         * \see RemoveItemFromInventory(Item)
+         * @short Добавляет предмет в инвентарь, с учётом максимального размера.
+         * @see inventory
+         * @see Item
+         * @see Item.OnAddToPlayerInventory(Player)
+         * @see RemoveItemFromInventory(Item)
          */
         public void AddItemToInventory(Item item) {
             if (inventory.Count < MAX_INVENTORY_SIZE) {
@@ -80,25 +80,35 @@ namespace ASCIIWars.Game {
             }
         }
 
-        /**
-         * \short Удаляет предмет из инвентаря.
-         * \see inventory
-         * \see Item
-         * \see Item.OnRemoveFromPlayerInventory(Player)
-         * \see AddItemToInventory(Item)
+        public void AddItemToInventory(Item item, int count) {
+            for (int i = 0; i < count; i++)
+                AddItemToInventory(item);
+        }
+
+	    /**
+         * @short Удаляет предмет из инвентаря.
+         * @see inventory
+         * @see Item
+         * @see Item.OnRemoveFromPlayerInventory(Player)
+         * @see AddItemToInventory(Item)
          */
         public void RemoveItemFromInventory(Item item) {
             inventory.Remove(item);
             item.OnRemoveFromPlayerInventory(this);
         }
 
+        public void RemoveItemFromInventory(Item item, int count) {
+            for (int i = 0; i < count; i++)
+                RemoveItemFromInventory(item);
+        }
+
         /**
-         * \short Выбирает выбираемый предмет в инвентаре, и отключает
+         * @short Выбирает выбираемый предмет в инвентаре, и отключает
          *        уже выбраный предмет этого типа.
-         * \see inventory
-         * \see Selectable
-         * \see Selectable.OnSelectByPlayer(Player)
-         * \see DeselectItemInInventory(Selectable)
+         * @see inventory
+         * @see Selectable
+         * @see Selectable.OnSelectByPlayer(Player)
+         * @see DeselectItemInInventory(Selectable)
          */
         public void SelectItemInInventory(Selectable selectable) {
             Selectable prevSelectedOfThisType = inventory.Where(it => it.GetType() == selectable.GetType())
@@ -114,11 +124,11 @@ namespace ASCIIWars.Game {
         }
 
         /**
-         * \short Отключает выбираемый предмет в инвентаре.
-         * \see inventory
-         * \see Selectable
-         * \see Selectable.OnDeselectByPlayer(Player)
-         * \see SelectItemInInventory(Selectable)
+         * @short Отключает выбираемый предмет в инвентаре.
+         * @see inventory
+         * @see Selectable
+         * @see Selectable.OnDeselectByPlayer(Player)
+         * @see SelectItemInInventory(Selectable)
          */
         public void DeselectItemInInventory(Selectable selectable) {
             selectable.isSelected = false;
@@ -126,10 +136,10 @@ namespace ASCIIWars.Game {
         }
 
         /**
-         * \short Использует и удаляет используемый предмет в инвентаре.
-         * \see inventory
-         * \see Consumable
-         * \see Consumable.OnConsumeByPlayer(Player)
+         * @short Использует и удаляет используемый предмет в инвентаре.
+         * @see inventory
+         * @see Consumable
+         * @see Consumable.OnConsumeByPlayer(Player)
          */
         public void ConsumeItemFromInventory(Consumable consumable) {
             consumable.OnConsumeByPlayer(this);
@@ -137,8 +147,8 @@ namespace ASCIIWars.Game {
         }
 
         /**
-         * \short Возвращает число предметов определённого типа в инвентаре.
-         * \see inventory
+         * @short Возвращает число предметов определённого типа в инвентаре.
+         * @see inventory
          */
         public int CountOfItemInInventory(Item item) {
             return inventory.Count(it => item.Equals(it));

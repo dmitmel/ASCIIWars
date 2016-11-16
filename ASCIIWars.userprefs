@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{817A6BCC-63D6-44EB-A92C-333E4DD42F6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ASCIIWars/Util/Collections.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASCIIWars/Game/QuestSituationController.cs">
     <Files>
-      <File FileName="ASCIIWars/assets/data/situations.json" Line="36" Column="18" />
-      <File FileName="ASCIIWars/Game/GameController.cs" Line="299" Column="25" />
-      <File FileName="ASCIIWars/Util/Collections.cs" Line="36" Column="22" />
+      <File FileName="ASCIIWars/Game/QuestSituationController.cs" Line="24" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
