@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{ABD6AF24-39CC-4FD5-961B-7EAB360C840D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASCIIWars.TestMod/Program.cs">
+    <Files>
+      <File FileName="ASCIIWars.TestMod/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ASCIIWars.TestMod PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

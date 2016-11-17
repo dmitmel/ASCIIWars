@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{817A6BCC-63D6-44EB-A92C-333E4DD42F6D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASCIIWars/Modding/ModDescriptor.cs">
+    <Files>
+      <File FileName="ASCIIWars/Modding/ModLoader.cs" Line="39" Column="25" />
+      <File FileName="ASCIIWars/Modding/ModDescriptor.cs" Line="19" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/dmitmel/Projects/CSharp/ASCIIWars/Src/ASCIIWars/Mods/ModLoader.cs" line="28" column="1" />
+      <Breakpoint file="/Users/dmitmel/Projects/CSharp/ASCIIWars/Src/ASCIIWars/Mods/ModLoader.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ASCIIWars PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

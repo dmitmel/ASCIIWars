@@ -1,0 +1,8 @@
+{
+    "name": "Test Mod",
+    "id": "TestMod",
+    "description": "Test Mod",
+    "modVersion": "1.0",
+    "descriptorClass": "ASCIIWars.TestMod.TestMod",
+    "dllName": "ASCIIWars.TestMod.dll"
+}
