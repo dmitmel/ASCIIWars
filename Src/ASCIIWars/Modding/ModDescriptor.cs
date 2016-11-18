@@ -18,10 +18,17 @@ using ASCIIWars.Game;
 using Newtonsoft.Json;
 
 namespace ASCIIWars.Modding {
+    /**
+     * @short Главный класс для модов.
+     * 
+     * Используестся для управления двумя событиями: загрузки мода
+     * и "разрушения" мода.
+     */
     public abstract class ModDescriptor {
         public readonly ModInfo modInfo;
 
         AssetContainer _assets;
+        /// Ассеты мода, загружаются только при первом использовании этого поля.
         public AssetContainer assets {
             get {
                 if (_assets == null)
@@ -42,7 +49,7 @@ namespace ASCIIWars.Modding {
         public string name;
         public string description;
         public string id;
-        public string modVersion;
+        public string version;
         public string descriptorClass;
         public string dllName;
         public string projectURL;

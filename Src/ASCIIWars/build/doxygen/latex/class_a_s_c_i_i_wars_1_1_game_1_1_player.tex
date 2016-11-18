@@ -1,0 +1,302 @@
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player}{}\section{Класс A\+S\+C\+I\+I\+Wars.\+Game.\+Player}
+\label{class_a_s_c_i_i_wars_1_1_game_1_1_player}\index{A\+S\+C\+I\+I\+Wars.\+Game.\+Player@{A\+S\+C\+I\+I\+Wars.\+Game.\+Player}}
+
+
+Представляет игрока.  
+
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a51054cd802e781a9f0a018f893ec3877}{Add\+Item\+To\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} item)
+\begin{DoxyCompactList}\small\item\em Добавляет предмет в инвентарь, с учётом максимального размера. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a7c362d28cd4146ebdcebc754982c0ad8}{Add\+Item\+To\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} item, int count)
+\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_aa58a605f6337c385f4023ea842f6c246}{Remove\+Item\+From\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} item)
+\begin{DoxyCompactList}\small\item\em Удаляет предмет из инвентаря. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_acef087ca862c4f210d7d049a2b09b29f}{Remove\+Item\+From\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} item, int count)
+\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_aec1c1f808fa3da1585a62487b0e92a38}{Select\+Item\+In\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable}{Selectable} selectable)
+\begin{DoxyCompactList}\small\item\em Выбирает выбираемый предмет в инвентаре, и отключает уже выбраный предмет этого типа. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a104ae32d59b6e627d55dc78ff4ffa995}{Deselect\+Item\+In\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable}{Selectable} selectable)
+\begin{DoxyCompactList}\small\item\em Отключает выбираемый предмет в инвентаре. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_ac1b40c126e1d9ec4f45f7831a86497ba}{Consume\+Item\+From\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_consumable}{Consumable} consumable)
+\begin{DoxyCompactList}\small\item\em Использует и удаляет используемый предмет в инвентаре. \end{DoxyCompactList}\item 
+int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_acb07b9e02dfe26cae85c1b685517438b}{Count\+Of\+Item\+In\+Inventory} (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} item)
+\begin{DoxyCompactList}\small\item\em Возвращает число предметов определённого типа в инвентаре. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1cc8a05398a717bcf8c5a0ebd2ea0747}{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE} = 20
+\begin{DoxyCompactList}\small\item\em Максимальный размер инвентаря. \end{DoxyCompactList}\item 
+int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_acfd121f865f0e5a87f177e93c82feadc}{max\+Health} = \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}
+\begin{DoxyCompactList}\small\item\em Максимальное здоровье. Может увеличиваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_health_booster}{A\+S\+C\+I\+I\+Wars.\+Game.\+Health\+Booster}. \end{DoxyCompactList}\item 
+int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a8f364a47ef452b6c99bc13b7bdaae7ca}{health} = \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}
+\begin{DoxyCompactList}\small\item\em Уровень здоровья. Может регенерироваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_health_potion}{A\+S\+C\+I\+I\+Wars.\+Game.\+Health\+Potion}. \end{DoxyCompactList}\item 
+int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a45736ed2f9941e3877df09db83cd4032}{attack}
+\begin{DoxyCompactList}\small\item\em Уровень атаки. Может увеличиваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_weapon}{A\+S\+C\+I\+I\+Wars.\+Game.\+Weapon}. \end{DoxyCompactList}\item 
+int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1dc39c7d8054c42dcb7af70e78b3be02}{defense}
+\begin{DoxyCompactList}\small\item\em Уровень защиты. Может увеличиваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_armor}{A\+S\+C\+I\+I\+Wars.\+Game.\+Armor}. \end{DoxyCompactList}\item 
+int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a5abede19c5428143df924357ad475691}{coins} = \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_af33b6af0d723918290a4a38aa4a6fb66}{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS}
+\begin{DoxyCompactList}\small\item\em Количество монет у игрока. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} $>$ \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} = new List$<$\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}$>$()
+\begin{DoxyCompactList}\small\item\em Инвентарь. Имеет ограничение по размеру (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1cc8a05398a717bcf8c5a0ebd2ea0747}{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH} = 100
+\begin{DoxyCompactList}\small\item\em Максимальное значение здоровья по умолчанию. \end{DoxyCompactList}\item 
+const int \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_af33b6af0d723918290a4a38aa4a6fb66}{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS} = 10
+\begin{DoxyCompactList}\small\item\em Количество монет в начале игры. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Представляет игрока. 
+
+У игрока есть такие свойства\+:
+\begin{DoxyItemize}
+\item здоровье (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a8f364a47ef452b6c99bc13b7bdaae7ca}{health})
+\begin{DoxyItemize}
+\item Ограничено максимальным значением (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_acfd121f865f0e5a87f177e93c82feadc}{max\+Health}), которое может увеличиваться (с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_health_booster}{A\+S\+C\+I\+I\+Wars.\+Game.\+Health\+Booster})
+\end{DoxyItemize}
+\item атака (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a45736ed2f9941e3877df09db83cd4032}{attack})
+\item защита (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1dc39c7d8054c42dcb7af70e78b3be02}{defense})
+\item инвентарь (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory})
+\begin{DoxyItemize}
+\item Размер ограничнен максимальным значением (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1cc8a05398a717bcf8c5a0ebd2ea0747}{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE}), которое не может увеличиваться
+\end{DoxyItemize}
+\item монеты (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a5abede19c5428143df924357ad475691}{coins})
+\begin{DoxyItemize}
+\item В начале игры даётся определённое количиство монет (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_af33b6af0d723918290a4a38aa4a6fb66}{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS}) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Методы}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a51054cd802e781a9f0a018f893ec3877}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a51054cd802e781a9f0a018f893ec3877} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Add\+Item\+To\+Inventory@{Add\+Item\+To\+Inventory}}
+\index{Add\+Item\+To\+Inventory@{Add\+Item\+To\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Add\+Item\+To\+Inventory()}{AddItemToInventory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Add\+Item\+To\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет предмет в инвентарь, с учётом максимального размера. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item_aec0355b7a9f647ef24897b95563f70d1}{Item.\+On\+Add\+To\+Player\+Inventory(\+Player)} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_aa58a605f6337c385f4023ea842f6c246}{Remove\+Item\+From\+Inventory(\+Item)} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a7c362d28cd4146ebdcebc754982c0ad8}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a7c362d28cd4146ebdcebc754982c0ad8} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Add\+Item\+To\+Inventory@{Add\+Item\+To\+Inventory}}
+\index{Add\+Item\+To\+Inventory@{Add\+Item\+To\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Add\+Item\+To\+Inventory()}{AddItemToInventory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Add\+Item\+To\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}}]{item,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_ac1b40c126e1d9ec4f45f7831a86497ba}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_ac1b40c126e1d9ec4f45f7831a86497ba} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Consume\+Item\+From\+Inventory@{Consume\+Item\+From\+Inventory}}
+\index{Consume\+Item\+From\+Inventory@{Consume\+Item\+From\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Consume\+Item\+From\+Inventory()}{ConsumeItemFromInventory()}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Consume\+Item\+From\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_consumable}{Consumable}}]{consumable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Использует и удаляет используемый предмет в инвентаре. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_consumable}{Consumable} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_consumable_a6aac67fe076ca39cb850e3720461fff8}{Consumable.\+On\+Consume\+By\+Player(\+Player)} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_acb07b9e02dfe26cae85c1b685517438b}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_acb07b9e02dfe26cae85c1b685517438b} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Count\+Of\+Item\+In\+Inventory@{Count\+Of\+Item\+In\+Inventory}}
+\index{Count\+Of\+Item\+In\+Inventory@{Count\+Of\+Item\+In\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Count\+Of\+Item\+In\+Inventory()}{CountOfItemInInventory()}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Count\+Of\+Item\+In\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возвращает число предметов определённого типа в инвентаре. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a104ae32d59b6e627d55dc78ff4ffa995}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a104ae32d59b6e627d55dc78ff4ffa995} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Deselect\+Item\+In\+Inventory@{Deselect\+Item\+In\+Inventory}}
+\index{Deselect\+Item\+In\+Inventory@{Deselect\+Item\+In\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Deselect\+Item\+In\+Inventory()}{DeselectItemInInventory()}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Deselect\+Item\+In\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable}{Selectable}}]{selectable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Отключает выбираемый предмет в инвентаре. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable}{Selectable} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable_a08a30c8786367bf45355e989b109c44b}{Selectable.\+On\+Deselect\+By\+Player(\+Player)} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_aec1c1f808fa3da1585a62487b0e92a38}{Select\+Item\+In\+Inventory(\+Selectable)} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_aa58a605f6337c385f4023ea842f6c246}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_aa58a605f6337c385f4023ea842f6c246} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Remove\+Item\+From\+Inventory@{Remove\+Item\+From\+Inventory}}
+\index{Remove\+Item\+From\+Inventory@{Remove\+Item\+From\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Remove\+Item\+From\+Inventory()}{RemoveItemFromInventory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Remove\+Item\+From\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Удаляет предмет из инвентаря. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item_a52412546f837bfc65a3aa9d728fa142f}{Item.\+On\+Remove\+From\+Player\+Inventory(\+Player)} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a51054cd802e781a9f0a018f893ec3877}{Add\+Item\+To\+Inventory(\+Item)} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_acef087ca862c4f210d7d049a2b09b29f}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_acef087ca862c4f210d7d049a2b09b29f} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Remove\+Item\+From\+Inventory@{Remove\+Item\+From\+Inventory}}
+\index{Remove\+Item\+From\+Inventory@{Remove\+Item\+From\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Remove\+Item\+From\+Inventory()}{RemoveItemFromInventory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Remove\+Item\+From\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}}]{item,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_aec1c1f808fa3da1585a62487b0e92a38}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_aec1c1f808fa3da1585a62487b0e92a38} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!Select\+Item\+In\+Inventory@{Select\+Item\+In\+Inventory}}
+\index{Select\+Item\+In\+Inventory@{Select\+Item\+In\+Inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{Select\+Item\+In\+Inventory()}{SelectItemInInventory()}}
+{\footnotesize\ttfamily void A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+Select\+Item\+In\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable}{Selectable}}]{selectable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Выбирает выбираемый предмет в инвентаре, и отключает уже выбраный предмет этого типа. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable}{Selectable} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_selectable_a95bdcf05ef9ea5f39c81ddd96294968a}{Selectable.\+On\+Select\+By\+Player(\+Player)} 
+
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a104ae32d59b6e627d55dc78ff4ffa995}{Deselect\+Item\+In\+Inventory(\+Selectable)} 
+\end{DoxySeeAlso}
+
+
+\subsection{Данные класса}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a45736ed2f9941e3877df09db83cd4032}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a45736ed2f9941e3877df09db83cd4032} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!attack@{attack}}
+\index{attack@{attack}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{attack}{attack}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+attack}
+
+
+
+Уровень атаки. Может увеличиваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_weapon}{A\+S\+C\+I\+I\+Wars.\+Game.\+Weapon}. 
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a5abede19c5428143df924357ad475691}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a5abede19c5428143df924357ad475691} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!coins@{coins}}
+\index{coins@{coins}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{coins}{coins}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+coins = \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_af33b6af0d723918290a4a38aa4a6fb66}{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS}}
+
+
+
+Количество монет у игрока. 
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}{DEFAULT\_MAX\_HEALTH}}
+{\footnotesize\ttfamily const int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Максимальное значение здоровья по умолчанию. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_acfd121f865f0e5a87f177e93c82feadc}{max\+Health} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1dc39c7d8054c42dcb7af70e78b3be02}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1dc39c7d8054c42dcb7af70e78b3be02} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!defense@{defense}}
+\index{defense@{defense}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{defense}{defense}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+defense}
+
+
+
+Уровень защиты. Может увеличиваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_armor}{A\+S\+C\+I\+I\+Wars.\+Game.\+Armor}. 
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a8f364a47ef452b6c99bc13b7bdaae7ca}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a8f364a47ef452b6c99bc13b7bdaae7ca} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!health@{health}}
+\index{health@{health}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+health = \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}}
+
+
+
+Уровень здоровья. Может регенерироваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_health_potion}{A\+S\+C\+I\+I\+Wars.\+Game.\+Health\+Potion}. 
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!inventory@{inventory}}
+\index{inventory@{inventory}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{inventory}{inventory}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}$>$ A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+inventory = new List$<$\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_item}{Item}$>$()}
+
+
+
+Инвентарь. Имеет ограничение по размеру (\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1cc8a05398a717bcf8c5a0ebd2ea0747}{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE}). 
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1cc8a05398a717bcf8c5a0ebd2ea0747}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_a1cc8a05398a717bcf8c5a0ebd2ea0747} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE@{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE}}
+\index{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE@{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE}{MAX\_INVENTORY\_SIZE}}
+{\footnotesize\ttfamily const int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+M\+A\+X\+\_\+\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+S\+I\+ZE = 20}
+
+
+
+Максимальный размер инвентаря. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a04acfaa196162f89bfae7aee5ec45480}{inventory} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_acfd121f865f0e5a87f177e93c82feadc}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_acfd121f865f0e5a87f177e93c82feadc} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!max\+Health@{max\+Health}}
+\index{max\+Health@{max\+Health}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{max\+Health}{maxHealth}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+max\+Health = \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_ab5921985db319187e317563c15ef48dc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+L\+TH}}
+
+
+
+Максимальное здоровье. Может увеличиваться в течении игры с помощью \hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_health_booster}{A\+S\+C\+I\+I\+Wars.\+Game.\+Health\+Booster}. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a8f364a47ef452b6c99bc13b7bdaae7ca}{health} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_s_c_i_i_wars_1_1_game_1_1_player_af33b6af0d723918290a4a38aa4a6fb66}{}\label{class_a_s_c_i_i_wars_1_1_game_1_1_player_af33b6af0d723918290a4a38aa4a6fb66} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}!S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS@{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS}}
+\index{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS@{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS}!A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player@{A\+S\+C\+I\+I\+Wars\+::\+Game\+::\+Player}}
+\subsubsection{\texorpdfstring{S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS}{STARTER\_COINS}}
+{\footnotesize\ttfamily const int A\+S\+C\+I\+I\+Wars.\+Game.\+Player.\+S\+T\+A\+R\+T\+E\+R\+\_\+\+C\+O\+I\+NS = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество монет в начале игры. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_game_1_1_player_a5abede19c5428143df924357ad475691}{coins} 
+\end{DoxySeeAlso}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Game/\hyperlink{_player_8cs}{Player.\+cs}\end{DoxyCompactItemize}

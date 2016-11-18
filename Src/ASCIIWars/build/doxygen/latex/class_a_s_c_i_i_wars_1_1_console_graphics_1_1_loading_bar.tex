@@ -1,0 +1,106 @@
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar}{}\section{Класс A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar}
+\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar}\index{A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar}}
+
+
+Рисует символьную полоску загрузки.  
+
+
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a573cfd9dc72c4277e97c5fe2f358c3dd}{Load} (params \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task}\mbox{[}$\,$\mbox{]} tasks)
+\item 
+static void \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a45b8be22b39aee7e47e9d6669670dd7d}{Load} (List$<$ \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task} $>$ tasks)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa9838505eb125e0fc4ede3576f59513a}{Print\+Progress\+Of} (string task\+Name, float complete\+Percent)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d}{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE} = \char`\"{}Загрузка завершена!\char`\"{}
+\item 
+const int \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a0b1318cefcfe584170b1c6089213f251}{B\+A\+R\+\_\+\+L\+E\+N\+G\+TH} = 100
+\item 
+const int \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb}{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG} = 1500
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Рисует символьную полоску загрузки. 
+
+
+\begin{DoxyItemize}
+\item Загрузка выглядит примерно так\+: 
+\begin{DoxyCode}
+Тут столько же решёток,
+На сколько процентов                 Тут столько же пробелов, сколько осталось до
+выполнены задачи                     завершения выполнения всех задач
+          |                                                |
+ \_\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_\_  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+/                   \(\backslash\)/                                                                             \(\backslash\)
+#####################                                                                                21%
+Hello, World!                                                                                        \(\backslash\)\_/
+\(\backslash\)\_\_\_\_\_\_\_\_\_\_\_/                                                                                         |
+      |                                                                                      Процент
+       выполнения
+Имя текущей задачи                                                                           всех задач
+\end{DoxyCode}
+
+\item Задач не должно быть больше чем 100. Если их меньше чем 100, то полоска будет завершена до 100.
+\item Когда выполнение закончится, то имя последней задачи будет заменено на значание \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d}{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}
+\item Консоль очищается, после того, как пройдёт время из \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb}{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task} 
+\end{DoxySeeAlso}
+
+
+\subsection{Методы}
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a573cfd9dc72c4277e97c5fe2f358c3dd}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a573cfd9dc72c4277e97c5fe2f358c3dd} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!Load@{Load}}
+\index{Load@{Load}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+Load (\begin{DoxyParamCaption}\item[{params \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task} \mbox{[}$\,$\mbox{]}}]{tasks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a45b8be22b39aee7e47e9d6669670dd7d}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a45b8be22b39aee7e47e9d6669670dd7d} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!Load@{Load}}
+\index{Load@{Load}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+Load (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_task}{Task} $>$}]{tasks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa9838505eb125e0fc4ede3576f59513a}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa9838505eb125e0fc4ede3576f59513a} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!Print\+Progress\+Of@{Print\+Progress\+Of}}
+\index{Print\+Progress\+Of@{Print\+Progress\+Of}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{Print\+Progress\+Of()}{PrintProgressOf()}}
+{\footnotesize\ttfamily static void A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+Print\+Progress\+Of (\begin{DoxyParamCaption}\item[{string}]{task\+Name,  }\item[{float}]{complete\+Percent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a0b1318cefcfe584170b1c6089213f251}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_a0b1318cefcfe584170b1c6089213f251} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!B\+A\+R\+\_\+\+L\+E\+N\+G\+TH@{B\+A\+R\+\_\+\+L\+E\+N\+G\+TH}}
+\index{B\+A\+R\+\_\+\+L\+E\+N\+G\+TH@{B\+A\+R\+\_\+\+L\+E\+N\+G\+TH}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{B\+A\+R\+\_\+\+L\+E\+N\+G\+TH}{BAR\_LENGTH}}
+{\footnotesize\ttfamily const int A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+B\+A\+R\+\_\+\+L\+E\+N\+G\+TH = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_ae05f622988d5cebaa3e0c14d45d832fb} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG@{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}}
+\index{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG@{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG}{DELAY\_BEFORE\_CLEARING}}
+{\footnotesize\ttfamily const int A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+D\+E\+L\+A\+Y\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+C\+L\+E\+A\+R\+I\+NG = 1500\hspace{0.3cm}{\ttfamily [private]}}
+
+Время в миллисекундах, которое надо ждать, чтоб полоска загрузки очислилась, после окончания загрузки. \hypertarget{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d}{}\label{class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar_aa75543e5166964ca32750bb66591ab3d} 
+\index{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}!F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE@{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}}
+\index{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE@{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}!A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar@{A\+S\+C\+I\+I\+Wars\+::\+Console\+Graphics\+::\+Loading\+Bar}}
+\subsubsection{\texorpdfstring{F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE}{FINISHED\_TITLE}}
+{\footnotesize\ttfamily const string A\+S\+C\+I\+I\+Wars.\+Console\+Graphics.\+Loading\+Bar.\+F\+I\+N\+I\+S\+H\+E\+D\+\_\+\+T\+I\+T\+LE = \char`\"{}Загрузка завершена!\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+Строка, котороя будет выведена на месте последней задачи, при окончании загрузки. 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Console\+Graphics/\hyperlink{_loading_bar_8cs}{Loading\+Bar.\+cs}\end{DoxyCompactItemize}

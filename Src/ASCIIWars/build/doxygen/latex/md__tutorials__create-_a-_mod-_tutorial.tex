@@ -1,0 +1,48 @@
+В игре есть уже встроенная поддержка моддинга. Принцип создания мода довольно простой, о этом и пойдёт речь в этой главе.
+
+\subsection*{Создание проекта}
+
+
+\begin{DoxyEnumerate}
+\item Для начала, создаём консольный проект.
+\item Добавляем в зависимости решение {\ttfamily \hyperlink{namespace_a_s_c_i_i_wars}{A\+S\+C\+I\+I\+Wars}}. Не знаю как, но это обязательно надо сделать. Хотя, есть один способ\+:
+\begin{DoxyEnumerate}
+\item Получаем \href{https://github.com/fed-of-coders/ASCIIWars}{\tt исходники с Github\textquotesingle{}а}\+: ```sh git clone \href{https://github.com/fed-of-coders/ASCIIWars.git}{\tt https\+://github.\+com/fed-\/of-\/coders/\+A\+S\+C\+I\+I\+Wars.\+git} cd \hyperlink{namespace_a_s_c_i_i_wars}{A\+S\+C\+I\+I\+Wars} ``{\ttfamily }
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+
+{\ttfamily Создаём консольный проект в папке}Src{\ttfamily .
+\begin{DoxyEnumerate}
+\item Открываем из этого проекта решениеA\+S\+C\+I\+I\+Wars`, так чтобы не закрыть этот проект\+: 
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Перетаскиваем проект из этого решения в решение {\ttfamily \hyperlink{namespace_a_s_c_i_i_wars}{A\+S\+C\+I\+I\+Wars}}\+: 
+\item Закрываем решение мода\+: 
+\item Дважды кликаем по папке {\ttfamily References}, чтобы открыть окно зависимостей проекта мода\+: 
+\item Выбираем проект {\ttfamily \hyperlink{namespace_a_s_c_i_i_wars}{A\+S\+C\+I\+I\+Wars}} как зависимость (может потребоваться закрытие решения и открытия решения {\ttfamily \hyperlink{namespace_a_s_c_i_i_wars}{A\+S\+C\+I\+I\+Wars}}!)\+: 
+\end{DoxyEnumerate}}
+
+{\ttfamily  Отлично! теперб можно использовать классы из namespace\textquotesingle{}а {\ttfamily \hyperlink{namespace_a_s_c_i_i_wars}{A\+S\+C\+I\+I\+Wars}}!
+\begin{DoxyEnumerate}
+\item Теперь нужно скопировать и вставить вот этот код в главный файл\+: 
+\begin{DoxyCode}
+using ASCIIWars.Modding;
+
+public class MyMod : ModDescriptor \{
+    public MyMod(ModInfo modInfo) : base(modInfo) \{ \}
+
+    public override void OnLoadBy(ModLoader modLoader) \{
+
+    \}
+
+    public override void OnDestroyBy(ModLoader modLoader) \{
+
+    \}
+\}
+\end{DoxyCode}
+
+
+Метод {\ttfamily On\+Load\+By} вызывается после того, как мод был загружен. Метод {\ttfamily On\+Destroy\+By} вызывается после того, как приложение завершило работу.
+
+В классе 
+\end{DoxyEnumerate}}
