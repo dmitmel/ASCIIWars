@@ -92,7 +92,7 @@ namespace MyMod {
 ассеты мода.
 
 ### Добавление кампаний
-Тут всё очень просто. Надо выполнить этот код в методе `OnLoadBy`
+Тут всё очень просто. Надо выполнить этот код в методе `OnLoadBy`:
 ```csharp
 Campaign campaign = Campaign.LoadFrom(assets, "your-campaign");
 Application.Campaigns.Add(campaign);
