@@ -73,9 +73,6 @@
     <None Include="assets\classic-campaign\items.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="assets\funny-task-names.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Doxyfile" />
     <None Include="assets\classic-campaign\campaign.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -87,6 +84,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Tutorials\Create-A-Mod-Tutorial.md" />
+    <None Include="assets\funny-task-names.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Util\" />
