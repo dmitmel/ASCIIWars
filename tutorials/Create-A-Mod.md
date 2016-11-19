@@ -27,16 +27,16 @@ mods/
 
   2. Создаём проект в папке `Src`.
   3. Открываем из этого проекта решение `ASCIIWars`, так чтобы не закрыть этот проект:
-     ![](Create-A-Mod-Open-Solution.png)
+     ![](images/Create-A-Mod-Open-Solution.png)
   3. Перетаскиваем проект из этого решения в решение `ASCIIWars`:
-     ![](Create-A-Mod-Move-Solution.png)
+     ![](images/Create-A-Mod-Move-Solution.png)
   4. Закрываем решение мода:
-     ![](Create-A-Mod-Close-Solution.png)
+     ![](images/Create-A-Mod-Close-Solution.png)
   5. Дважды кликаем по папке `References`, чтобы открыть окно зависимостей проекта мода:
-     ![](Create-A-Mod-Open-References.png)
+     ![](images/Create-A-Mod-Open-References.png)
   6. Выбираем проект `ASCIIWars` как зависимость (может потребоваться закрытие решения и
      открытия решения `ASCIIWars`!):
-     ![](Create-A-Mod-Add-Reference.png)
+     ![](images/Create-A-Mod-Add-Reference.png)
 
   Отлично! теперб можно использовать классы из namespace'а `ASCIIWars`!
 
