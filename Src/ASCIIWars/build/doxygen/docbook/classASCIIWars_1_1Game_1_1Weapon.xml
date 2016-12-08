@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Game_1_1Weapon">
+<title>ASCIIWars::Game::Weapon class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Game::Weapon</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1Weapon__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Game::Weapon</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1Weapon__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Открытые атрибуты</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>readonly int attack</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classASCIIWars_1_1Game_1_1Weapon_1ab292fb175c5d6e29ec2918069f831d4c">Weapon</link> (
+string id, string name, string description, int attack)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1Weapon_1ad29135a3edb4ea03f29163d788364299">OnAddToPlayerInventory</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1Weapon_1a6cd549ad51fa64884a66b1083098465f">OnSelectByPlayer</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1Weapon_1aa03a588bfb93fbf63d4d7bf63ce62ae1">OnDeselectByPlayer</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1Weapon_1a1fc9edec1d3881aee188a30ddc8f9e58">OnRemoveFromPlayerInventory</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override int <link linkend="classASCIIWars_1_1Game_1_1Weapon_1af252081d5a5f047785ed545946bb5214">GetHashCode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override bool <link linkend="classASCIIWars_1_1Game_1_1Weapon_1a281a4ca4d8a376aeda8408551ee168cf">Equals</link> (
+object obj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Данные класса</title>
+        </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1ab292fb175c5d6e29ec2918069f831d4c">
+                <title>ASCIIWars.Game.Weapon.Weapon (string id, string name, string description, int attack)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1ad29135a3edb4ea03f29163d788364299">
+                <title>override void ASCIIWars.Game.Weapon.OnAddToPlayerInventory (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1a6cd549ad51fa64884a66b1083098465f">
+                <title>override void ASCIIWars.Game.Weapon.OnSelectByPlayer (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1aa03a588bfb93fbf63d4d7bf63ce62ae1">
+                <title>override void ASCIIWars.Game.Weapon.OnDeselectByPlayer (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1a1fc9edec1d3881aee188a30ddc8f9e58">
+                <title>override void ASCIIWars.Game.Weapon.OnRemoveFromPlayerInventory (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1af252081d5a5f047785ed545946bb5214">
+                <title>override int ASCIIWars.Game.Weapon.GetHashCode ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Weapon_1a281a4ca4d8a376aeda8408551ee168cf">
+                <title>override bool ASCIIWars.Game.Weapon.Equals (object obj)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

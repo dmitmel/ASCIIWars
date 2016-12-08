@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weapon',['Weapon',['../class_a_s_c_i_i_wars_1_1_game_1_1_weapon.html',1,'ASCIIWars::Game']]]
+  ['weapon',['Weapon',['../classASCIIWars_1_1Game_1_1Weapon.html',1,'ASCIIWars::Game']]]
 ];

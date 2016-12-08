@@ -8,7 +8,7 @@ var menudata={children:[
 {text:'Классы',url:'annotated.html',children:[
 {text:'Классы',url:'annotated.html'},
 {text:'Алфавитный указатель классов',url:'classes.html'},
-{text:'Иерархия классов',url:'hierarchy.html'},
+{text:'Иерархия классов',url:'inherits.html'},
 {text:'Члены классов',url:'functions.html',children:[
 {text:'Указатель',url:'functions.html',children:[
 {text:'_',url:'functions.html#index__'},
@@ -73,6 +73,4 @@ var menudata={children:[
 {text:'s',url:'functions_vars.html#index_s'},
 {text:'t',url:'functions_vars.html#index_t'},
 {text:'v',url:'functions_vars.html#index_v'}]},
-{text:'Свойства',url:'functions_prop.html'}]}]},
-{text:'Файлы',url:'files.html',children:[
-{text:'Файлы',url:'files.html'}]}]}
+{text:'Свойства',url:'functions_prop.html'}]}]}]}

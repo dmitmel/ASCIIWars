@@ -93,12 +93,12 @@ namespace ASCIIWars.Game {
 
                         resultSituation = situations.GetSituation(resultSituationID);
                     })),
-                    Pair<string, Action>("Убежать", () => {
+                    Pair("Убежать", Action(() => {
                         resultSituation = situations.RandomSituationByIDs(enemy.situationsOnRunAway);
-                    }),
-                    Pair<string, Action>("Инвентарь", () => InventoryController.Start(player)),
-                    Pair<string, Action>("Сохраниться", () => { }),
-                    Pair<string, Action>("Выйти", () => { throw new GameOverException(); })
+                    })),
+                    Pair("Инвентарь", Action(() => InventoryController.Start(player))),
+                    Pair("Сохраниться", EmptyAction),
+                    Pair("Выйти", ThrowAction(new GameOverException()))
                 )
             );
 

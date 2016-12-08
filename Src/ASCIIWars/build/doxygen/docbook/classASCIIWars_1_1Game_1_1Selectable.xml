@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Game_1_1Selectable">
+<title>ASCIIWars::Game::Selectable class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Game::Selectable</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1Selectable__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Game::Selectable</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1Selectable__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Открытые атрибуты</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isSelected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classASCIIWars_1_1Game_1_1Selectable_1aa473dd0350842e4adfefa8e71accadd2">Selectable</link> (
+string id, string name, string description)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract void <link linkend="classASCIIWars_1_1Game_1_1Selectable_1a95bdcf05ef9ea5f39c81ddd96294968a">OnSelectByPlayer</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract void <link linkend="classASCIIWars_1_1Game_1_1Selectable_1a08a30c8786367bf45355e989b109c44b">OnDeselectByPlayer</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Данные класса</title>
+        </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Selectable_1aa473dd0350842e4adfefa8e71accadd2">
+                <title>ASCIIWars.Game.Selectable.Selectable (string id, string name, string description)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Selectable_1a95bdcf05ef9ea5f39c81ddd96294968a">
+                <title>abstract void ASCIIWars.Game.Selectable.OnSelectByPlayer (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1Selectable_1a08a30c8786367bf45355e989b109c44b">
+                <title>abstract void ASCIIWars.Game.Selectable.OnDeselectByPlayer (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

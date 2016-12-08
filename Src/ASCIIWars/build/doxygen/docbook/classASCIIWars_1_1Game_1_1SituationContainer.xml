@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Game_1_1SituationContainer">
+<title>ASCIIWars::Game::SituationContainer class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Game::SituationContainer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1SituationContainer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Game::SituationContainer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1SituationContainer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Открытые атрибуты</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Situation &gt; situations</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Branch &gt; branches</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Enemy &gt; enemies</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Merchant &gt; merchants</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, CraftingPlace &gt; craftingPlaces</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, Quest &gt; quests</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Situation">Situation</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1a83ebb8c14380b5171524c8ebd4c2a581">RandomSituationByIDs</link> (
+List&lt; string &gt; IDs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Situation">Situation</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1aad379806144d48b5d6c66e409065473c">GetSituation</link> (
+string id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Branch">Branch</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1a3bab9a3b20ced9a6b3408601ff381b51">GetBranch</link> (
+string id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Enemy">Enemy</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1a559089971fe865f682768b43173181c4">GetEnemy</link> (
+string id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Merchant">Merchant</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1a1e6b56a5e6db3eec1b59414956c245ae">GetMerchant</link> (
+string id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1CraftingPlace">CraftingPlace</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1a537f25cbf5d97a989954c421b6ea1a21">GetCraftingPlace</link> (
+string id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Quest">Quest</link> <link linkend="classASCIIWars_1_1Game_1_1SituationContainer_1ac15145909b7206c2c2a7aa13f770a9a0">GetQuest</link> (
+string id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Данные класса</title>
+        </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1a83ebb8c14380b5171524c8ebd4c2a581">
+                <title>Situation ASCIIWars.Game.SituationContainer.RandomSituationByIDs (List&lt; string &gt; IDs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1aad379806144d48b5d6c66e409065473c">
+                <title>Situation ASCIIWars.Game.SituationContainer.GetSituation (string id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1a3bab9a3b20ced9a6b3408601ff381b51">
+                <title>Branch ASCIIWars.Game.SituationContainer.GetBranch (string id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1a559089971fe865f682768b43173181c4">
+                <title>Enemy ASCIIWars.Game.SituationContainer.GetEnemy (string id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1a1e6b56a5e6db3eec1b59414956c245ae">
+                <title>Merchant ASCIIWars.Game.SituationContainer.GetMerchant (string id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1a537f25cbf5d97a989954c421b6ea1a21">
+                <title>CraftingPlace ASCIIWars.Game.SituationContainer.GetCraftingPlace (string id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationContainer_1ac15145909b7206c2c2a7aa13f770a9a0">
+                <title>Quest ASCIIWars.Game.SituationContainer.GetQuest (string id)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

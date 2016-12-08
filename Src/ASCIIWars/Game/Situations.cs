@@ -55,6 +55,8 @@ namespace ASCIIWars.Game {
         public int maxHealth;
         public int health;
         public int attack;
+        public int criticalChance;
+        public int missChance;
         public int coinsReward;
         public List<ItemReference> drop;
         public List<string> situationsOnDefeat;

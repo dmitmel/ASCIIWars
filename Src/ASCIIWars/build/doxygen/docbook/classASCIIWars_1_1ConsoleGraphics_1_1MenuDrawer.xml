@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer">
+<title>ASCIIWars::ConsoleGraphics::MenuDrawer class Reference</title>
+<para>Inheritance diagram for ASCIIWars::ConsoleGraphics::MenuDrawer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::ConsoleGraphics::MenuDrawer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a48cc3b43302cba89239d72c3f6bcddab">ShowInfoDialog</link> (
+string info)<para><emphasis>Показывает меню, у которого есть одна кнопка (&lt;tt&gt;OK&lt;/tt&gt;) для
+       подтверждения.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a2c8b1f60df7a915364bc4c0244599aa1">Select</link> (
+Dictionary&lt; string, Action &gt; actions)<para><emphasis>Принимает словарь с названиями действиями и callback&apos;ами.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a5870384104321c1a9e954514ebd11b3a">Select</link> (
+string prompt, Dictionary&lt; string, Action &gt; actions)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a119f33600258dbcc040ca77f06d6c7ac">Select</link> (
+string prompt, params string [] choices)<para><emphasis>Принимает массив с названиями действий меню и заголовок меню.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1aab8b9a476227de6b8d81cb87747bdc99">Select</link> (
+params string [] choices)<para><emphasis>Принимает массив с названиями действий меню.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Утилита для рисования меню с выбором. Выбор можно сдвигать вверх с помощью стрелки вверх, и вниз с помощью стрелки вниз. Выбор подтверждается с помощью Enter&apos;а. </para>
+    </simplesect>
+        <simplesect>
+            <title>Подробное описание</title>
+
+<para>Меню выглядит примерно так: <literallayout><computeroutput>&#32;Какую&#32;таблетку&#32;ты&#32;выберешь?&#32;&#32;&#32;&#32;&#32;&lt;---&#32;Заголовок,&#32;может&#32;отсутствовать
+&#32;&#32;&#32;никакую&#32;--|
+&#32;&#32;&#32;красную&#32;&#32;&#32;|--&#32;Элементы,&#32;который&#32;можно&#32;выбрать
+&#32;&gt;&#32;синюю&#32;&#32;&#32;--|
+&#32;^
+Стрелка,&#32;которая&#32;указывает&#32;на&#32;текущий&#32;выбранный&#32;елемент
+</computeroutput></literallayout></para>
+
+<para>Если курсор был сдвинут вверх в самом верхнем положении, или вниз в самом нижнем положении, он буддет поремещён на самую верхнию или нижнию позицию. </para>
+                <para>Definition at line 26 of file MenuDrawer.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuDrawer.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a48cc3b43302cba89239d72c3f6bcddab">
+                <title>static void ASCIIWars.ConsoleGraphics.MenuDrawer.ShowInfoDialog (string info)</title> <emphasis>Показывает меню, у которого есть одна кнопка (&lt;tt&gt;OK&lt;/tt&gt;) для
+       подтверждения.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Аргументы                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>info</entry>
+                                <entry>
+<para>Заголовок меню. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a2c8b1f60df7a915364bc4c0244599aa1">
+                <title>static void ASCIIWars.ConsoleGraphics.MenuDrawer.Select (Dictionary&lt; string, Action &gt; actions)</title> <emphasis>Принимает словарь с названиями действиями и callback&apos;ами.</emphasis>
+                
+<para>При выбирании действия (например, <computeroutput>foo bar!</computeroutput>), будет вызван callback, асооциированный с этим действием (например, <computeroutput>() =&gt; Console.WriteLine(&quot;Hello World!&quot;)</computeroutput>). </para>
+
+            </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a5870384104321c1a9e954514ebd11b3a">
+                <title>static void ASCIIWars.ConsoleGraphics.MenuDrawer.Select (string prompt, Dictionary&lt; string, Action &gt; actions)</title> <emphasis></emphasis>
+                
+<para>Действует также, как <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a2c8b1f60df7a915364bc4c0244599aa1">Select(Dictionary&lt;string, Action&gt;)</link>, но также принимает заголовок меню. </para>
+
+            </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1a119f33600258dbcc040ca77f06d6c7ac">
+                <title>static string ASCIIWars.ConsoleGraphics.MenuDrawer.Select (string prompt, params string[] choices)</title> <emphasis>Принимает массив с названиями действий меню и заголовок меню.</emphasis>
+                
+<para><formalpara><title>Возвращает: </title>
+
+<para>Выбраный заголовок. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer_1aab8b9a476227de6b8d81cb87747bdc99">
+                <title>static string ASCIIWars.ConsoleGraphics.MenuDrawer.Select (params string[] choices)</title> <emphasis>Принимает массив с названиями действий меню.</emphasis>
+                
+<para><formalpara><title>Возвращает: </title>
+
+<para>Выбраный заголовок. </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

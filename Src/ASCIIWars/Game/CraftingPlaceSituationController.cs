@@ -78,12 +78,12 @@ namespace ASCIIWars.Game {
                 Dictionaries.Merge(
                     actions,
                     MakeDictionary(
-                        Pair<string, Action>("Продолжить", () => {
+                        Pair("Продолжить", Action(() => {
                             resultSituation = situations.RandomSituationByIDs(craftingPlace.nextSituations);
-                        }),
-                        Pair<string, Action>("Инвентарь", () => InventoryController.Start(player)),
-                        Pair<string, Action>("Сохраниться", () => { }),
-                        Pair<string, Action>("Выйти", () => { throw new GameOverException(); })
+                        })),
+                        Pair("Инвентарь", Action(() => InventoryController.Start(player))),
+                        Pair("Сохраниться", EmptyAction),
+                        Pair("Выйти", ThrowAction(new GameOverException()))
                     )
                 )
             );

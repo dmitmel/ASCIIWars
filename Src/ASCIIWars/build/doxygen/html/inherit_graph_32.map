@@ -1,0 +1,8 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$interfaceASCIIWars_1_1Game_1_1SituationController.html" title="Контроллер для ситуаций. Используется, если тип ситуации совпадает с ID контроллера. " alt="" coords="5,135,189,177"/>
+<area shape="rect" id="node2" href="$classASCIIWars_1_1Game_1_1BranchSituationController.html" title="ASCIIWars.Game.BranchSituation\lController" alt="" coords="245,5,470,46"/>
+<area shape="rect" id="node3" href="$classASCIIWars_1_1Game_1_1CraftingPlaceSituationController.html" title="ASCIIWars.Game.CraftingPlace\lSituationController" alt="" coords="251,70,463,111"/>
+<area shape="rect" id="node4" href="$classASCIIWars_1_1Game_1_1EnemySituationController.html" title="ASCIIWars.Game.EnemySituation\lController" alt="" coords="245,135,470,177"/>
+<area shape="rect" id="node5" href="$classASCIIWars_1_1Game_1_1MerchantSituationController.html" title="ASCIIWars.Game.MerchantSituation\lController" alt="" coords="238,201,477,242"/>
+<area shape="rect" id="node6" href="$classASCIIWars_1_1Game_1_1QuestSituationController.html" title="ASCIIWars.Game.QuestSituation\lController" alt="" coords="248,266,467,307"/>
+</map>

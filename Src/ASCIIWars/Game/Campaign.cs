@@ -17,23 +17,23 @@
 using Newtonsoft.Json;
 using ASCIIWars.ConsoleGraphics;
 
-/**
- * @short Содержит компоненты кампании.
- * 
- * В представлении ассетов выглядит так:
- * 
- * ```
- * assets/
- *     campaign-folder/      <--- папка, имя которой - ID кампании
- *         campaign.json     <--- файл с данными кампании
- *         items.json        <--- Файл с вещами
- *         situations.json   <--- Файл с ситуациями
- * ```
- * 
- * @see SituationController
- * @see ItemContainer
- */
 namespace ASCIIWars.Game {
+    /**
+     * @short Содержит компоненты кампании.
+     *
+     * В представлении ассетов выглядит так:
+     *
+     * ```
+     * assets/
+     *     campaign-folder/      <--- папка, имя которой - ID кампании
+     *         campaign.json     <--- файл с данными кампании
+     *         items.json        <--- Файл с вещами
+     *         situations.json   <--- Файл с ситуациями
+     * ```
+     *
+     * @see SituationController
+     * @see ItemContainer
+     */
     public class Campaign {
         public string name;
 

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_9d1579cba8054c9b8c57c4a3408bbd9e">
+    <title>Содержание директории ConsoleGraphics</title>
+<para>Directory dependency diagram for ConsoleGraphics</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="dir_9d1579cba8054c9b8c57c4a3408bbd9e_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Файл </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="LoadingBar_8cs">LoadingBar.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="MenuDrawer_8cs">MenuDrawer.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="MyConsole_8cs">MyConsole.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Подробное описание</title>
+    <para>Directory location is /Users/dmitmel/Projects/CSharp/ASCIIWars/Src/ASCIIWars/ConsoleGraphics/</para>
+    </simplesect>
+</section>

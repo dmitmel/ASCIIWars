@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Modding_1_1ModLoadException">
+<title>ASCIIWars::Modding::ModLoadException class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Modding::ModLoadException</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Modding_1_1ModLoadException__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Modding::ModLoadException</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Modding_1_1ModLoadException__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classASCIIWars_1_1Modding_1_1ModLoadException_1a3cf0bc67df85b82a0b68322652661196">ModLoadException</link> (
+string message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classASCIIWars_1_1Modding_1_1ModLoadException_1a3cf0bc67df85b82a0b68322652661196">
+                <title>ASCIIWars.Modding.ModLoadException.ModLoadException (string message)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

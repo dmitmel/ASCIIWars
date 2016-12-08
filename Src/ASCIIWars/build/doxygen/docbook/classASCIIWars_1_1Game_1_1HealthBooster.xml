@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Game_1_1HealthBooster">
+<title>ASCIIWars::Game::HealthBooster class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Game::HealthBooster</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1HealthBooster__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Game::HealthBooster</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1HealthBooster__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Открытые атрибуты</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>readonly int healthBoost</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classASCIIWars_1_1Game_1_1HealthBooster_1ac7796979395fc12db8b4a8d9a9ba7d7e">HealthBooster</link> (
+string id, string name, int healthBoost)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1HealthBooster_1a99740fd21f80211f6a2058737b159425">OnAddToPlayerInventory</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1HealthBooster_1a0dd6134e102b2b4ea9d143b7cea15568">OnConsumeByPlayer</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="classASCIIWars_1_1Game_1_1HealthBooster_1ae06407b04a0e81da31c14c546d6aaaaf">OnRemoveFromPlayerInventory</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Player">Player</link> player)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override int <link linkend="classASCIIWars_1_1Game_1_1HealthBooster_1a79fdb10389338ad400f723a76ce30d7d">GetHashCode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override bool <link linkend="classASCIIWars_1_1Game_1_1HealthBooster_1a5396e7ebb46c32e36fefeb86ab4727d3">Equals</link> (
+object obj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Данные класса</title>
+        </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1HealthBooster_1ac7796979395fc12db8b4a8d9a9ba7d7e">
+                <title>ASCIIWars.Game.HealthBooster.HealthBooster (string id, string name, int healthBoost)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1HealthBooster_1a99740fd21f80211f6a2058737b159425">
+                <title>override void ASCIIWars.Game.HealthBooster.OnAddToPlayerInventory (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1HealthBooster_1a0dd6134e102b2b4ea9d143b7cea15568">
+                <title>override void ASCIIWars.Game.HealthBooster.OnConsumeByPlayer (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1HealthBooster_1ae06407b04a0e81da31c14c546d6aaaaf">
+                <title>override void ASCIIWars.Game.HealthBooster.OnRemoveFromPlayerInventory (Player player)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1HealthBooster_1a79fdb10389338ad400f723a76ce30d7d">
+                <title>override int ASCIIWars.Game.HealthBooster.GetHashCode ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1HealthBooster_1a5396e7ebb46c32e36fefeb86ab4727d3">
+                <title>override bool ASCIIWars.Game.HealthBooster.Equals (object obj)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

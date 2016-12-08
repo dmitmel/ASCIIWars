@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>ASCII Wars</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespaceASCIIWars.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceASCIIWars_1_1ConsoleGraphics.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceASCIIWars_1_1Game.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceASCIIWars_1_1Modding.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceASCIIWars_1_1Util.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceASCIIWars_1_1Util_1_1Dictionaries.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceASCIIWars_1_1Util_1_1Lambdas.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceNewtonsoft_1_1Json.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespacestatic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem_1_1Collections_1_1Generic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem_1_1IO.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem_1_1Linq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem_1_1Reflection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem_1_1Runtime_1_1CompilerServices.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespaceSystem_1_1Threading.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Классы</title>
+        <xi:include href="classASCIIWars_1_1Application.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Armor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Asset.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1AssetContainer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1AssetGroup.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Branch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1BranchSituationController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Campaign.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Util_1_1Collections.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Consumable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Craft.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1CraftingPlace.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1CraftingPlaceSituationController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Util_1_1Dictionaries.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Enemy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1EnemySituationController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classException.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1FullInventoryException.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1ConsoleGraphics_1_1FunnyTasksLoader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1GameController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1GameOverException.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1GlobalRandom.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1HealthBooster.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1HealthPotion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1InventoryController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Item.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1ItemContainer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1ItemReference.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1JSONArmor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1JSONHealthBooster.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1JSONHealthPotion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1JSONMaterial.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1JSONWeapon.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Util_1_1Lambdas.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Material.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1ConsoleGraphics_1_1MenuDrawer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Merchant.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1MerchantItem.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1MerchantSituationController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Modding_1_1ModDescriptor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Modding_1_1ModInfo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Modding_1_1ModLoader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Modding_1_1ModLoadException.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1NextSituation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Quest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1QuestSituationController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Selectable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Situation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1SituationContainer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="interfaceASCIIWars_1_1Game_1_1SituationController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1SituationControllersRegistry.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1ConsoleGraphics_1_1Task.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classASCIIWars_1_1Game_1_1Weapon.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Директории</title>
+        <xi:include href="dir_9d1579cba8054c9b8c57c4a3408bbd9e.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_a404c407b50258a875677cca767ffb8d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_c33286056d2acf479cd8641ef845fec1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_b77df69bbda58f5d50290397d23bdc99.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_43724e81dd40e09f32417973865cdd64.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_d051c76eebdc544d9c3d734575641c72.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_5f27b254bdfe3a9dc83a1ed338607a0e.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_d4f7a754e06480f800a6fab4b04999ce.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_d47853e6fb8fbc7aaad40510cff11bbf.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

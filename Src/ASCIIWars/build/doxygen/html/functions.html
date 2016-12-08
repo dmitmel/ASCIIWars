@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASCIIWars: Члены классов</title>
+<title>ASCII Wars: Члены классов</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ASCIIWars
+   <div id="projectname">ASCII Wars
+   &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">ASCII Wars (читается как &quot;аски варс&quot;) - Консольный квест для Unix систем, написаный на C#.</div>
   </td>
  </tr>
  </tbody>
@@ -43,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,21 +85,24 @@ $(function() {
 
 <h3><a id="index__"></a>- _ -</h3><ul>
 <li>_assets
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_descriptor.html#aa566f129182ce06660d9cdcc0c5ac46c">ASCIIWars.Modding.ModDescriptor</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModDescriptor.html#aa566f129182ce06660d9cdcc0c5ac46c">ASCIIWars.Modding.ModDescriptor</a>
 </li>
 <li>_refrencedItem
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_item_reference.html#a15d2baba4e97b1f60ae57f96f65429cb">ASCIIWars.Game.ItemReference</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1ItemReference.html#a15d2baba4e97b1f60ae57f96f65429cb">ASCIIWars.Game.ItemReference</a>
 </li>
 <li>_style
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_my_console.html#a6c024c3a9ff580d84a2260a750af20a4">ASCIIWars.ConsoleGraphics.MyConsole</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.html#a6c024c3a9ff580d84a2260a750af20a4">ASCIIWars.ConsoleGraphics.MyConsole</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

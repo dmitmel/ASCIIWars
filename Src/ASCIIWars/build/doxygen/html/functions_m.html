@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASCIIWars: Члены классов</title>
+<title>ASCII Wars: Члены классов</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ASCIIWars
+   <div id="projectname">ASCII Wars
+   &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">ASCII Wars (читается как &quot;аски варс&quot;) - Консольный квест для Unix систем, написаный на C#.</div>
   </td>
  </tr>
  </tbody>
@@ -43,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_m.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,82 +85,85 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>Main()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_application.html#a12dbc4ab81c994876ce7bd2664eee54f">ASCIIWars.Application</a>
+: <a class="el" href="classASCIIWars_1_1Application.html#a12dbc4ab81c994876ce7bd2664eee54f">ASCIIWars.Application</a>
 </li>
 <li>MAIN_SITUATION_NAME
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_game_controller.html#a14c3ad1eaf01d8c03789d8cc1fd09dde">ASCIIWars.Game.GameController</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1GameController.html#a14c3ad1eaf01d8c03789d8cc1fd09dde">ASCIIWars.Game.GameController</a>
 </li>
 <li>MakeDictionary&lt; K, V &gt;()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_util_1_1_dictionaries.html#a388efc7bcd0f011123c6d988104a5b29">ASCIIWars.Util.Dictionaries</a>
+: <a class="el" href="classASCIIWars_1_1Util_1_1Dictionaries.html#a388efc7bcd0f011123c6d988104a5b29">ASCIIWars.Util.Dictionaries</a>
 </li>
 <li>Map&lt; I, O &gt;()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_util_1_1_collections.html#a16737b03d935bccbcba44eca76f2a9a2">ASCIIWars.Util.Collections</a>
+: <a class="el" href="classASCIIWars_1_1Util_1_1Collections.html#a16737b03d935bccbcba44eca76f2a9a2">ASCIIWars.Util.Collections</a>
 </li>
 <li>Material()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_material.html#aa4aee4341c8099508c7ef1f980163e1d">ASCIIWars.Game.Material</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Material.html#aa4aee4341c8099508c7ef1f980163e1d">ASCIIWars.Game.Material</a>
 </li>
 <li>materials
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_item_container.html#a503bd6d21fce823b843969ccf07871bd">ASCIIWars.Game.ItemContainer</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1ItemContainer.html#a503bd6d21fce823b843969ccf07871bd">ASCIIWars.Game.ItemContainer</a>
 </li>
 <li>MAX_INVENTORY_SIZE
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_player.html#a1cc8a05398a717bcf8c5a0ebd2ea0747">ASCIIWars.Game.Player</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Player.html#a1cc8a05398a717bcf8c5a0ebd2ea0747">ASCIIWars.Game.Player</a>
 </li>
 <li>MAX_TASK_DELAY
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_funny_tasks_loader.html#a0c34f365b46e3cc7e9974d5412b05f6c">ASCIIWars.ConsoleGraphics.FunnyTasksLoader</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1FunnyTasksLoader.html#a0c34f365b46e3cc7e9974d5412b05f6c">ASCIIWars.ConsoleGraphics.FunnyTasksLoader</a>
 </li>
 <li>maxHealth
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_enemy.html#a491cc3f4cf2ffe2a412411248cd9736a">ASCIIWars.Game.Enemy</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_player.html#acfd121f865f0e5a87f177e93c82feadc">ASCIIWars.Game.Player</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Enemy.html#a491cc3f4cf2ffe2a412411248cd9736a">ASCIIWars.Game.Enemy</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1Player.html#acfd121f865f0e5a87f177e93c82feadc">ASCIIWars.Game.Player</a>
 </li>
 <li>merchants
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_situation_container.html#ad941813542c7012bd5867cc7962f1fee">ASCIIWars.Game.SituationContainer</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1SituationContainer.html#ad941813542c7012bd5867cc7962f1fee">ASCIIWars.Game.SituationContainer</a>
 </li>
 <li>Merge&lt; K, V &gt;()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_util_1_1_dictionaries.html#a687b7596776083fdad1492e8466cffc3">ASCIIWars.Util.Dictionaries</a>
+: <a class="el" href="classASCIIWars_1_1Util_1_1Dictionaries.html#a687b7596776083fdad1492e8466cffc3">ASCIIWars.Util.Dictionaries</a>
 </li>
 <li>MIN_TASK_DELAY
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_funny_tasks_loader.html#a9008864a7b23b6e86b350b5c2097151c">ASCIIWars.ConsoleGraphics.FunnyTasksLoader</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1FunnyTasksLoader.html#a9008864a7b23b6e86b350b5c2097151c">ASCIIWars.ConsoleGraphics.FunnyTasksLoader</a>
 </li>
 <li>ModDescriptor()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_descriptor.html#a7a7b93295cc97ebd7fbcdf74763794d7">ASCIIWars.Modding.ModDescriptor</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModDescriptor.html#a7a7b93295cc97ebd7fbcdf74763794d7">ASCIIWars.Modding.ModDescriptor</a>
 </li>
 <li>modDescriptors
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_loader.html#a82e3e47bba4f2b077f2f2156954ea853">ASCIIWars.Modding.ModLoader</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModLoader.html#a82e3e47bba4f2b077f2f2156954ea853">ASCIIWars.Modding.ModLoader</a>
 </li>
 <li>modDirectory
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_info.html#a5e09899879496f050627f5b92cb3fc2b">ASCIIWars.Modding.ModInfo</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModInfo.html#a5e09899879496f050627f5b92cb3fc2b">ASCIIWars.Modding.ModInfo</a>
 </li>
 <li>modInfo
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_descriptor.html#a89890adfa5b31278c157f91fc50a1fcc">ASCIIWars.Modding.ModDescriptor</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModDescriptor.html#a89890adfa5b31278c157f91fc50a1fcc">ASCIIWars.Modding.ModDescriptor</a>
 </li>
 <li>ModLoader
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_application.html#ad41fb53e9ffd835c97c5f746134fbb62">ASCIIWars.Application</a>
+: <a class="el" href="classASCIIWars_1_1Application.html#ad41fb53e9ffd835c97c5f746134fbb62">ASCIIWars.Application</a>
 </li>
 <li>ModLoadException()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_load_exception.html#a3cf0bc67df85b82a0b68322652661196">ASCIIWars.Modding.ModLoadException</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModLoadException.html#a3cf0bc67df85b82a0b68322652661196">ASCIIWars.Modding.ModLoadException</a>
 </li>
 <li>MoveCursorDown()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_my_console.html#aa22019c9afb2464aa8a1adbfacf2e979">ASCIIWars.ConsoleGraphics.MyConsole</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.html#aa22019c9afb2464aa8a1adbfacf2e979">ASCIIWars.ConsoleGraphics.MyConsole</a>
 </li>
 <li>MoveCursorLeft()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_my_console.html#a0dab60fcee6c6b175a913e5d6d9f8c95">ASCIIWars.ConsoleGraphics.MyConsole</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.html#a0dab60fcee6c6b175a913e5d6d9f8c95">ASCIIWars.ConsoleGraphics.MyConsole</a>
 </li>
 <li>MoveCursorRight()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_my_console.html#adfccb3e8bafbe5d101a743cba7c05f43">ASCIIWars.ConsoleGraphics.MyConsole</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.html#adfccb3e8bafbe5d101a743cba7c05f43">ASCIIWars.ConsoleGraphics.MyConsole</a>
 </li>
 <li>MoveCursorToBeginingOfLine()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_my_console.html#a77af8cdcc9b62a3dccf066db376c8c57">ASCIIWars.ConsoleGraphics.MyConsole</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.html#a77af8cdcc9b62a3dccf066db376c8c57">ASCIIWars.ConsoleGraphics.MyConsole</a>
 </li>
 <li>MoveCursorUp()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_my_console.html#ac514523e267519ad39f15457b948112f">ASCIIWars.ConsoleGraphics.MyConsole</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1MyConsole.html#ac514523e267519ad39f15457b948112f">ASCIIWars.ConsoleGraphics.MyConsole</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

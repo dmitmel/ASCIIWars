@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Application">
+<title>ASCIIWars::Application class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Application</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Application__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Application</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Application__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static AssetContainer Assets</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; Campaign &gt; Campaigns</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static ModLoader ModLoader</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1Application_1a12dbc4ab81c994876ce7bd2664eee54f">Main</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1Application_1a17ad0a44229caa1044d99f975ed97be3">PrepareLoading</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1Application_1a264d79af3a0048eef7ff8f864fdec698">DoLoading</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1Application_1a56252f7621e7b373696a7a79d09a052f">FinishLoading</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classASCIIWars_1_1Application_1a12dbc4ab81c994876ce7bd2664eee54f">
+                <title>static void ASCIIWars.Application.Main ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Application_1a17ad0a44229caa1044d99f975ed97be3">
+                <title>static void ASCIIWars.Application.PrepareLoading ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Application_1a264d79af3a0048eef7ff8f864fdec698">
+                <title>static void ASCIIWars.Application.DoLoading ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Application_1a56252f7621e7b373696a7a79d09a052f">
+                <title>static void ASCIIWars.Application.FinishLoading ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

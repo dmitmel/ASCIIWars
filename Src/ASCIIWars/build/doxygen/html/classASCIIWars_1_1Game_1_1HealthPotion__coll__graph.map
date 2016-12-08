@@ -1,0 +1,4 @@
+<map id="ASCIIWars.Game.HealthPotion" name="ASCIIWars.Game.HealthPotion">
+<area shape="rect" id="node2" href="$classASCIIWars_1_1Game_1_1Consumable.html" title="Consumable" alt="" coords="61,80,157,107"/>
+<area shape="rect" id="node3" href="$classASCIIWars_1_1Game_1_1Item.html" title="Item" alt="" coords="85,5,133,32"/>
+</map>

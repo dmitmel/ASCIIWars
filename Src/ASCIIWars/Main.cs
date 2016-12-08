@@ -42,7 +42,7 @@ namespace ASCIIWars {
 #endif
                 Console.WriteLine(Assets["asciiArts"]["title.txt"].content);
 
-                MenuState state = MenuState.MainMenu;
+                var state = MenuState.MainMenu;
                 while (state != MenuState.ExitGame) {
                     switch (state) {
                         case MenuState.MainMenu:

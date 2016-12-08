@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['selectable',['Selectable',['../class_a_s_c_i_i_wars_1_1_game_1_1_selectable.html',1,'ASCIIWars::Game']]],
-  ['situation',['Situation',['../class_a_s_c_i_i_wars_1_1_game_1_1_situation.html',1,'ASCIIWars::Game']]],
-  ['situationcontainer',['SituationContainer',['../class_a_s_c_i_i_wars_1_1_game_1_1_situation_container.html',1,'ASCIIWars::Game']]],
-  ['situationcontroller',['SituationController',['../interface_a_s_c_i_i_wars_1_1_game_1_1_situation_controller.html',1,'ASCIIWars::Game']]],
-  ['situationcontrollersregistry',['SituationControllersRegistry',['../class_a_s_c_i_i_wars_1_1_game_1_1_situation_controllers_registry.html',1,'ASCIIWars::Game']]]
+  ['selectable',['Selectable',['../classASCIIWars_1_1Game_1_1Selectable.html',1,'ASCIIWars::Game']]],
+  ['situation',['Situation',['../classASCIIWars_1_1Game_1_1Situation.html',1,'ASCIIWars::Game']]],
+  ['situationcontainer',['SituationContainer',['../classASCIIWars_1_1Game_1_1SituationContainer.html',1,'ASCIIWars::Game']]],
+  ['situationcontroller',['SituationController',['../interfaceASCIIWars_1_1Game_1_1SituationController.html',1,'ASCIIWars::Game']]],
+  ['situationcontrollersregistry',['SituationControllersRegistry',['../classASCIIWars_1_1Game_1_1SituationControllersRegistry.html',1,'ASCIIWars::Game']]]
 ];

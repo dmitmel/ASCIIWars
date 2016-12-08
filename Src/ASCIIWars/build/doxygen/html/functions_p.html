@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASCIIWars: Члены классов</title>
+<title>ASCII Wars: Члены классов</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ASCIIWars
+   <div id="projectname">ASCII Wars
+   &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">ASCII Wars (читается как &quot;аски варс&quot;) - Консольный квест для Unix систем, написаный на C#.</div>
   </td>
  </tr>
  </tbody>
@@ -43,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_p.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,33 +85,36 @@ $(function() {
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>Pair&lt; K, V &gt;()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_util_1_1_dictionaries.html#aa4374015be0400ad808586251d9a89cc">ASCIIWars.Util.Dictionaries</a>
+: <a class="el" href="classASCIIWars_1_1Util_1_1Dictionaries.html#aa4374015be0400ad808586251d9a89cc">ASCIIWars.Util.Dictionaries</a>
 </li>
 <li>path
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_asset.html#a2d1d00016592f2930725bf14a2a05fb8">ASCIIWars.Game.Asset</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Asset.html#a2d1d00016592f2930725bf14a2a05fb8">ASCIIWars.Game.Asset</a>
 </li>
 <li>player
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_game_controller.html#a16a24596b98a17361e430d984f85a7ca">ASCIIWars.Game.GameController</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1GameController.html#a16a24596b98a17361e430d984f85a7ca">ASCIIWars.Game.GameController</a>
 </li>
 <li>PrepareLoading()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_application.html#a17ad0a44229caa1044d99f975ed97be3">ASCIIWars.Application</a>
+: <a class="el" href="classASCIIWars_1_1Application.html#a17ad0a44229caa1044d99f975ed97be3">ASCIIWars.Application</a>
 </li>
 <li>price
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_merchant_item.html#af1b4ca7cc021067017ece68cc0145631">ASCIIWars.Game.MerchantItem</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1MerchantItem.html#af1b4ca7cc021067017ece68cc0145631">ASCIIWars.Game.MerchantItem</a>
 </li>
 <li>PrintProgressOf()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_console_graphics_1_1_loading_bar.html#aa9838505eb125e0fc4ede3576f59513a">ASCIIWars.ConsoleGraphics.LoadingBar</a>
+: <a class="el" href="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar.html#aa9838505eb125e0fc4ede3576f59513a">ASCIIWars.ConsoleGraphics.LoadingBar</a>
 </li>
 <li>projectURL
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_info.html#a313468a6ee076b45a223f9c6704f8e22">ASCIIWars.Modding.ModInfo</a>
+: <a class="el" href="classASCIIWars_1_1Modding_1_1ModInfo.html#a313468a6ee076b45a223f9c6704f8e22">ASCIIWars.Modding.ModInfo</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

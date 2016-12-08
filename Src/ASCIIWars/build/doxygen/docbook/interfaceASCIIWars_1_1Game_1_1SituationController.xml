@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="interfaceASCIIWars_1_1Game_1_1SituationController">
+<title>ASCIIWars::Game::SituationController interface Reference</title>
+<para>Inheritance diagram for ASCIIWars::Game::SituationController</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="interfaceASCIIWars_1_1Game_1_1SituationController__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Game::SituationController</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="interfaceASCIIWars_1_1Game_1_1SituationController__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classASCIIWars_1_1Game_1_1Situation">Situation</link> <link linkend="interfaceASCIIWars_1_1Game_1_1SituationController_1a2cf0359dfc1683beb63f0dfed1c372e6">HandleSituation</link> (
+<link linkend="classASCIIWars_1_1Game_1_1Situation">Situation</link> currentSituation, <link linkend="classASCIIWars_1_1Game_1_1GameController">GameController</link> gameController)<para><emphasis>Используется для обработки какой-то ситуации.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Контроллер для ситуаций. Используется, если тип ситуации совпадает с ID контроллера. </para>
+    </simplesect>
+        <simplesect>
+            <title>Подробное описание</title>
+
+<para><formalpara><title>См. также: </title>
+
+<para><link linkend="interfaceASCIIWars_1_1Game_1_1SituationController_1a2cf0359dfc1683beb63f0dfed1c372e6">HandleSituation</link> </para>
+<simplesect/>
+<para><link linkend="classASCIIWars_1_1Game_1_1SituationControllersRegistry">SituationControllersRegistry</link> </para>
+</formalpara>
+</para>
+                <para>Definition at line 26 of file SituationControllers.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SituationControllers.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="interfaceASCIIWars_1_1Game_1_1SituationController_1a2cf0359dfc1683beb63f0dfed1c372e6">
+                <title>Situation ASCIIWars.Game.SituationController.HandleSituation (Situation currentSituation, GameController gameController)</title> <emphasis>Используется для обработки какой-то ситуации.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Аргументы                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>currentSituation</entry>
+                                <entry>
+<para>Текущая ситуация. Объект с точными данными о ситуации можно получить из #SituationController по #Situation.objectID. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>gameController</entry>
+                                <entry>
+<para>Ссылка на контроллер игры, использующий этот метод. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Возвращает: </title>
+
+<para>Следуйщую ситуацию. </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

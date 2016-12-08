@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar">
+<title>ASCIIWars::ConsoleGraphics::LoadingBar class Reference</title>
+<para>Inheritance diagram for ASCIIWars::ConsoleGraphics::LoadingBar</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::ConsoleGraphics::LoadingBar</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Закрытые данные</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string FINISHED_TITLE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int BAR_LENGTH</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int DELAY_BEFORE_CLEARING</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1a573cfd9dc72c4277e97c5fe2f358c3dd">Load</link> (
+params <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1Task">Task</link> [] tasks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1a45b8be22b39aee7e47e9d6669670dd7d">Load</link> (
+List&lt; <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1Task">Task</link> &gt; tasks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1aa9838505eb125e0fc4ede3576f59513a">PrintProgressOf</link> (
+string taskName, float completePercent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Рисует символьную полоску загрузки. </para>
+    </simplesect>
+        <simplesect>
+            <title>Подробное описание</title>
+
+<para><itemizedlist>
+<listitem>
+<para>Загрузка выглядит примерно так: <literallayout><computeroutput>Тут&#32;столько&#32;же&#32;решёток,
+На&#32;сколько&#32;процентов&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Тут&#32;столько&#32;же&#32;пробелов,&#32;сколько&#32;осталось&#32;до
+выполнены&#32;задачи&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;завершения&#32;выполнения&#32;всех&#32;задач
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;|&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;|
+&#32;_________|_________&#32;&#32;_____________________________________|_______________________________________
+/&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\/&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+#####################&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;21%
+Hello,&#32;World!&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\_/
+\___________/&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;|
+&#32;&#32;&#32;&#32;&#32;&#32;|&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Процент&#32;выполнения
+Имя&#32;текущей&#32;задачи&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;всех&#32;задач
+</computeroutput></literallayout></para>
+</listitem><listitem>
+<para>Задач не должно быть больше чем 100. Если их меньше чем 100, то полоска будет завершена до 100.</para>
+</listitem><listitem>
+<para>Когда выполнение закончится, то имя последней задачи будет заменено на значание <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1aa75543e5166964ca32750bb66591ab3d">FINISHED_TITLE</link></para>
+</listitem><listitem>
+<para>Консоль очищается, после того, как пройдёт время из <link linkend="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1ae05f622988d5cebaa3e0c14d45d832fb">DELAY_BEFORE_CLEARING</link></para>
+</listitem></itemizedlist>
+</para>
+
+<para><formalpara><title>См. также: </title>
+
+<para><link linkend="classASCIIWars_1_1ConsoleGraphics_1_1Task">Task</link> </para>
+</formalpara>
+</para>
+                <para>Definition at line 84 of file LoadingBar.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>LoadingBar.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Данные класса</title>
+            <simplesect>
+                <title>const string ASCIIWars.ConsoleGraphics.LoadingBar.FINISHED_TITLE</title>                
+<para>Строка, котороя будет выведена на месте последней задачи, при окончании загрузки. </para>
+
+                <para>Definition at line 87 of file LoadingBar.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>LoadingBar.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>const int ASCIIWars.ConsoleGraphics.LoadingBar.DELAY_BEFORE_CLEARING</title>                
+<para>Время в миллисекундах, которое надо ждать, чтоб полоска загрузки очислилась, после окончания загрузки. </para>
+
+                <para>Definition at line 92 of file LoadingBar.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>LoadingBar.cs</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1a573cfd9dc72c4277e97c5fe2f358c3dd">
+                <title>static void ASCIIWars.ConsoleGraphics.LoadingBar.Load (params Task[] tasks)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1a45b8be22b39aee7e47e9d6669670dd7d">
+                <title>static void ASCIIWars.ConsoleGraphics.LoadingBar.Load (List&lt; Task &gt; tasks)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1ConsoleGraphics_1_1LoadingBar_1aa9838505eb125e0fc4ede3576f59513a">
+                <title>static void ASCIIWars.ConsoleGraphics.LoadingBar.PrintProgressOf (string taskName, float completePercent)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

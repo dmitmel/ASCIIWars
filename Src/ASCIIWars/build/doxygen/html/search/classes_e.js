@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['quest',['Quest',['../class_a_s_c_i_i_wars_1_1_game_1_1_quest.html',1,'ASCIIWars::Game']]],
-  ['questsituationcontroller',['QuestSituationController',['../class_a_s_c_i_i_wars_1_1_game_1_1_quest_situation_controller.html',1,'ASCIIWars::Game']]]
+  ['quest',['Quest',['../classASCIIWars_1_1Game_1_1Quest.html',1,'ASCIIWars::Game']]],
+  ['questsituationcontroller',['QuestSituationController',['../classASCIIWars_1_1Game_1_1QuestSituationController.html',1,'ASCIIWars::Game']]]
 ];

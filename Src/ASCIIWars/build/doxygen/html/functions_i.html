@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASCIIWars: Члены классов</title>
+<title>ASCII Wars: Члены классов</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ASCIIWars
+   <div id="projectname">ASCII Wars
+   &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">ASCII Wars (читается как &quot;аски варс&quot;) - Консольный квест для Unix систем, написаный на C#.</div>
   </td>
  </tr>
  </tbody>
@@ -43,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_i.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,48 +85,51 @@ $(function() {
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>id
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_branch.html#a1282f409f0d3f4920253079ed5f2ba3c">ASCIIWars.Game.Branch</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_campaign.html#a1ef983b8a95909958e2b0fcf90f1f62f">ASCIIWars.Game.Campaign</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_enemy.html#a4899e9443d2f01a8f95b187784ba08c9">ASCIIWars.Game.Enemy</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_item.html#a744d51f7684a4e46a1f834f8666db58e">ASCIIWars.Game.Item</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_item_reference.html#aefee1e2d5dac90be31ad4a9a3ee6fba2">ASCIIWars.Game.ItemReference</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_merchant.html#a6cc3b433c5be3021a26bdab57d9534e8">ASCIIWars.Game.Merchant</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_merchant_item.html#a43704fae44c4c55cb243bb6922558e12">ASCIIWars.Game.MerchantItem</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_modding_1_1_mod_info.html#a5ebe9e95930e72b641e0803770b289cd">ASCIIWars.Modding.ModInfo</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Branch.html#a1282f409f0d3f4920253079ed5f2ba3c">ASCIIWars.Game.Branch</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1Campaign.html#a1ef983b8a95909958e2b0fcf90f1f62f">ASCIIWars.Game.Campaign</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1Enemy.html#a4899e9443d2f01a8f95b187784ba08c9">ASCIIWars.Game.Enemy</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1Item.html#a744d51f7684a4e46a1f834f8666db58e">ASCIIWars.Game.Item</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1ItemReference.html#aefee1e2d5dac90be31ad4a9a3ee6fba2">ASCIIWars.Game.ItemReference</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1Merchant.html#a6cc3b433c5be3021a26bdab57d9534e8">ASCIIWars.Game.Merchant</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1MerchantItem.html#a43704fae44c4c55cb243bb6922558e12">ASCIIWars.Game.MerchantItem</a>
+, <a class="el" href="classASCIIWars_1_1Modding_1_1ModInfo.html#a5ebe9e95930e72b641e0803770b289cd">ASCIIWars.Modding.ModInfo</a>
 </li>
 <li>IDs
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_next_situation.html#a882f10c3c66963ef3e67c9e30689c968">ASCIIWars.Game.NextSituation</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1NextSituation.html#a882f10c3c66963ef3e67c9e30689c968">ASCIIWars.Game.NextSituation</a>
 </li>
 <li>ingredients
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_craft.html#a6b86d118ec73cfaa9f14db2b427f85d6">ASCIIWars.Game.Craft</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Craft.html#a6b86d118ec73cfaa9f14db2b427f85d6">ASCIIWars.Game.Craft</a>
 </li>
 <li>inventory
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_player.html#a04acfaa196162f89bfae7aee5ec45480">ASCIIWars.Game.Player</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Player.html#a04acfaa196162f89bfae7aee5ec45480">ASCIIWars.Game.Player</a>
 </li>
 <li>IsEmpty&lt; T &gt;()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_util_1_1_collections.html#af9a8a8494797736b55e88f260621af94">ASCIIWars.Util.Collections</a>
+: <a class="el" href="classASCIIWars_1_1Util_1_1Collections.html#af9a8a8494797736b55e88f260621af94">ASCIIWars.Util.Collections</a>
 </li>
 <li>isSelected
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_selectable.html#ad864445e5408f11f74f2e5c843677fb2">ASCIIWars.Game.Selectable</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Selectable.html#ad864445e5408f11f74f2e5c843677fb2">ASCIIWars.Game.Selectable</a>
 </li>
 <li>Item()
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_item.html#ae9b7ebce1c577c6d4e142f7d8f736ec5">ASCIIWars.Game.Item</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Item.html#ae9b7ebce1c577c6d4e142f7d8f736ec5">ASCIIWars.Game.Item</a>
 </li>
 <li>items
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_campaign.html#a22844063638b6252dc47c327c19432fc">ASCIIWars.Game.Campaign</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_game_controller.html#a96ab06ced4cf725ad1a4200425a533eb">ASCIIWars.Game.GameController</a>
-, <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_merchant.html#aa35fa4b7dabae111e0819b68866fceba">ASCIIWars.Game.Merchant</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Campaign.html#a22844063638b6252dc47c327c19432fc">ASCIIWars.Game.Campaign</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1GameController.html#a96ab06ced4cf725ad1a4200425a533eb">ASCIIWars.Game.GameController</a>
+, <a class="el" href="classASCIIWars_1_1Game_1_1Merchant.html#aa35fa4b7dabae111e0819b68866fceba">ASCIIWars.Game.Merchant</a>
 </li>
 <li>itemsReward
-: <a class="el" href="class_a_s_c_i_i_wars_1_1_game_1_1_quest.html#a38fa559b69d0acc00726e31f644d5780">ASCIIWars.Game.Quest</a>
+: <a class="el" href="classASCIIWars_1_1Game_1_1Quest.html#a38fa559b69d0acc00726e31f644d5780">ASCIIWars.Game.Quest</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

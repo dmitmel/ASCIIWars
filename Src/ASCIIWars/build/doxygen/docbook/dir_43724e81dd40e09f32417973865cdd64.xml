@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_43724e81dd40e09f32417973865cdd64">
+    <title>Содержание директории obj</title>
+<para>Directory dependency diagram for obj</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="dir_43724e81dd40e09f32417973865cdd64_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Алфавитный указатель директорий </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_d47853e6fb8fbc7aaad40510cff11bbf">obj/x86</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Подробное описание</title>
+    <para>Directory location is /Users/dmitmel/Projects/CSharp/ASCIIWars/Src/ASCIIWars/obj/</para>
+    </simplesect>
+</section>

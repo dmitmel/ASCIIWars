@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespaceASCIIWars_1_1Game">
+<title>ASCIIWars::Game</title>
+        <section>
+            <title> Классы </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Armor">ASCIIWars::Game::Armor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Asset">ASCIIWars::Game::Asset</link></para>
+<para><emphasis>Ассет. Хранит текст ассета.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1AssetContainer">ASCIIWars::Game::AssetContainer</link></para>
+<para><emphasis>Контейнер ассетов. Хранит их по групам. В каждой
+       группе находятся файлы ассетов.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1AssetGroup">ASCIIWars::Game::AssetGroup</link></para>
+<para><emphasis>Хранит файлы с ассетами.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Branch">ASCIIWars::Game::Branch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1BranchSituationController">ASCIIWars::Game::BranchSituationController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Campaign">ASCIIWars::Game::Campaign</link></para>
+<para><emphasis>Содержит компоненты кампании.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Consumable">ASCIIWars::Game::Consumable</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Craft">ASCIIWars::Game::Craft</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1CraftingPlace">ASCIIWars::Game::CraftingPlace</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1CraftingPlaceSituationController">ASCIIWars::Game::CraftingPlaceSituationController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Enemy">ASCIIWars::Game::Enemy</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1EnemySituationController">ASCIIWars::Game::EnemySituationController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1FullInventoryException">ASCIIWars::Game::FullInventoryException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1GameController">ASCIIWars::Game::GameController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1GameOverException">ASCIIWars::Game::GameOverException</link></para>
+<para><emphasis>Исключение, которое выбрасывается при окончании игры.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1HealthBooster">ASCIIWars::Game::HealthBooster</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1HealthPotion">ASCIIWars::Game::HealthPotion</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1InventoryController">ASCIIWars::Game::InventoryController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Item">ASCIIWars::Game::Item</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1ItemContainer">ASCIIWars::Game::ItemContainer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1ItemReference">ASCIIWars::Game::ItemReference</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1JSONArmor">ASCIIWars::Game::JSONArmor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1JSONHealthBooster">ASCIIWars::Game::JSONHealthBooster</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1JSONHealthPotion">ASCIIWars::Game::JSONHealthPotion</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1JSONMaterial">ASCIIWars::Game::JSONMaterial</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1JSONWeapon">ASCIIWars::Game::JSONWeapon</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Material">ASCIIWars::Game::Material</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Merchant">ASCIIWars::Game::Merchant</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1MerchantItem">ASCIIWars::Game::MerchantItem</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1MerchantSituationController">ASCIIWars::Game::MerchantSituationController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1NextSituation">ASCIIWars::Game::NextSituation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Player">ASCIIWars::Game::Player</link></para>
+<para><emphasis>Представляет игрока.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Quest">ASCIIWars::Game::Quest</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1QuestSituationController">ASCIIWars::Game::QuestSituationController</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Selectable">ASCIIWars::Game::Selectable</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Situation">ASCIIWars::Game::Situation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1SituationContainer">ASCIIWars::Game::SituationContainer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="interfaceASCIIWars_1_1Game_1_1SituationController">ASCIIWars::Game::SituationController</link></para>
+<para><emphasis>Контроллер для ситуаций. Используется, если тип ситуации
+       совпадает с ID контроллера.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1SituationControllersRegistry">ASCIIWars::Game::SituationControllersRegistry</link></para>
+<para><emphasis>Содержит контроллеры ситуаций по ID&apos;шникам.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classASCIIWars_1_1Game_1_1Weapon">ASCIIWars::Game::Weapon</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Перечисления</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="namespaceASCIIWars_1_1Game_1a38949febfe4ff7d83568273830f42e5a">InventoryState</link> {
+<link linkend="namespaceASCIIWars_1_1Game_1a38949febfe4ff7d83568273830f42e5aa5e035f78e07eda1a93846b8ea0e9589b">ShowInventory</link>,
+<link linkend="namespaceASCIIWars_1_1Game_1a38949febfe4ff7d83568273830f42e5aafb91889eb4e48cf1ecb2b6f39405d724">ShowItem</link>,
+<link linkend="namespaceASCIIWars_1_1Game_1a38949febfe4ff7d83568273830f42e5aa011a738f4f78ce6394f16784769a82c4">ShowSelectable</link>,
+<link linkend="namespaceASCIIWars_1_1Game_1a38949febfe4ff7d83568273830f42e5aad522e5cef00735497c26885b05b6ad60">ShowConsumable</link>,
+<link linkend="namespaceASCIIWars_1_1Game_1a38949febfe4ff7d83568273830f42e5aafef46e5063ce3dc78b8ae64fa474241d">Exit</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

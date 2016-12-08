@@ -1,0 +1,5 @@
+<map id="ASCIIWars.Game.Selectable" name="ASCIIWars.Game.Selectable">
+<area shape="rect" id="node3" href="$classASCIIWars_1_1Game_1_1Armor.html" title="ASCIIWars.Game.Armor" alt="" coords="5,155,173,181"/>
+<area shape="rect" id="node4" href="$classASCIIWars_1_1Game_1_1Weapon.html" title="ASCIIWars.Game.Weapon" alt="" coords="197,155,379,181"/>
+<area shape="rect" id="node2" href="$classASCIIWars_1_1Game_1_1Item.html" title="Item" alt="" coords="164,5,212,32"/>
+</map>

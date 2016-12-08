@@ -56,6 +56,8 @@ namespace ASCIIWars.Game {
         /// @short Уровень атаки. Может увеличиваться в течении игры
         ///        с помощью #ASCIIWars.Game.Weapon.
         public int attack;
+        public int criticalChance;
+        public int missChance;
         /// @short Уровень защиты. Может увеличиваться в течении игры
         ///        с помощью #ASCIIWars.Game.Armor.
         public int defense;
@@ -203,35 +205,48 @@ namespace ASCIIWars.Game {
 
     public class Weapon : Selectable {
         public readonly int attack;
+        public readonly int missChance;
+        public readonly int criticalChance;
 
-        public Weapon(string id, string name, string description, int attack) : base(id, name, $"Наносит {attack} урона. {description}") {
+        public Weapon(string id, string name, string description, int attack, int criticalChance, int missChance)
+            : base(id, name, $"Наносит {attack} урона (крит. - {criticalChance}%, промах - {missChance}%). {description}") {
             this.attack = attack;
+            this.criticalChance = criticalChance;
+            this.missChance = missChance;
         }
 
         public override void OnAddToPlayerInventory(Player player) { }
 
         public override void OnSelectByPlayer(Player player) {
             player.attack = attack;
+            player.missChance = missChance;
+            player.criticalChance = criticalChance;
         }
 
         public override void OnDeselectByPlayer(Player player) {
             player.attack = 0;
+            player.missChance = 0;
+            player.criticalChance = 0;
         }
 
         public override void OnRemoveFromPlayerInventory(Player player) {
-            if (isSelected)
+            if (isSelected) {
                 player.attack = 0;
+                player.missChance = missChance;
+                player.criticalChance = criticalChance;
+            }
         }
 
         public override int GetHashCode() {
-            return base.GetHashCode() ^ attack;
+            return base.GetHashCode() ^ attack ^ missChance ^ criticalChance;
         }
 
         public override bool Equals(object obj) {
             if (!(obj is Weapon))
                 return false;
             var other = obj as Weapon;
-            return (id == other.id && name == other.name && description == other.description && attack == other.attack);
+            return (id == other.id && name == other.name && description == other.description && attack == other.attack &&
+                    missChance == other.missChance && criticalChance == other.criticalChance);
         }
     }
 

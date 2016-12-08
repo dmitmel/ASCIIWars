@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dictionaries',['Dictionaries',['../class_a_s_c_i_i_wars_1_1_util_1_1_dictionaries.html',1,'ASCIIWars::Util']]]
+  ['dictionaries',['Dictionaries',['../classASCIIWars_1_1Util_1_1Dictionaries.html',1,'ASCIIWars::Util']]]
 ];

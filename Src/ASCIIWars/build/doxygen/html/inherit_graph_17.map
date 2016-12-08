@@ -1,0 +1,10 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$classASCIIWars_1_1Game_1_1Item.html" title="ASCIIWars.Game.Item" alt="" coords="5,93,163,120"/>
+<area shape="rect" id="node2" href="$classASCIIWars_1_1Game_1_1Consumable.html" title="ASCIIWars.Game.Consumable" alt="" coords="211,43,418,69"/>
+<area shape="rect" id="node5" href="$classASCIIWars_1_1Game_1_1Material.html" title="ASCIIWars.Game.Material" alt="" coords="225,93,404,120"/>
+<area shape="rect" id="node6" href="$classASCIIWars_1_1Game_1_1Selectable.html" title="ASCIIWars.Game.Selectable" alt="" coords="218,144,411,171"/>
+<area shape="rect" id="node3" href="$classASCIIWars_1_1Game_1_1HealthBooster.html" title="ASCIIWars.Game.HealthBooster" alt="" coords="467,5,683,32"/>
+<area shape="rect" id="node4" href="$classASCIIWars_1_1Game_1_1HealthPotion.html" title="ASCIIWars.Game.HealthPotion" alt="" coords="471,56,679,83"/>
+<area shape="rect" id="node7" href="$classASCIIWars_1_1Game_1_1Armor.html" title="ASCIIWars.Game.Armor" alt="" coords="491,119,659,145"/>
+<area shape="rect" id="node8" href="$classASCIIWars_1_1Game_1_1Weapon.html" title="ASCIIWars.Game.Weapon" alt="" coords="484,169,665,196"/>
+</map>

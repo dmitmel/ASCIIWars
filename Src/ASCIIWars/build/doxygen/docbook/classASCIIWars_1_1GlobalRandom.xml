@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1GlobalRandom">
+<title>ASCIIWars::GlobalRandom class Reference</title>
+<para>Inheritance diagram for ASCIIWars::GlobalRandom</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1GlobalRandom__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::GlobalRandom</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1GlobalRandom__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classASCIIWars_1_1GlobalRandom_1a650d98f5b3610bf7f169d94064c33d96">GlobalRandom</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Random <link linkend="classASCIIWars_1_1GlobalRandom_1ad40c313d502809aad3398da0e8d1d8e6">NewRandomGenerator</link> (
+)<para><emphasis>Создаёт новый генератор и возвращает его.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Random <link linkend="classASCIIWars_1_1GlobalRandom_1a781ebf6e30b09d6b5ec1f97a2337564b">NewRandomGenerator</link> (
+int seed)<para><emphasis>Создаёт новый генератор с сидом и возвращает его.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="classASCIIWars_1_1GlobalRandom_1a64f8803c3b01fc0971feac020deaa8c6">Next</link> (
+int max)<para><emphasis>То же самое, что и &lt;tt&gt;GlobalRandom.RandomGenerator.Next(max)&lt;/tt&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="classASCIIWars_1_1GlobalRandom_1af84b17383838baa18d8c1d070d26e6c5">Next</link> (
+int min, int max)<para><emphasis>То же самое, что и &lt;tt&gt;GlobalRandom.RandomGenerator.Next(min, max)&lt;/tt&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Глобальный контейнер для генератора рандамных чисел. </para>
+    </simplesect>
+        <simplesect>
+            <title>Подробное описание</title>
+
+<para>Базирован на функциями из стандартной библиотеки Haskell&apos;я:<itemizedlist>
+<listitem>
+<para><computeroutput>getStdGen</computeroutput> - <link xlink:href="http://hackage.haskell.org/package/random-1.1/docs/System-Random.html#v:getStdGen">http://hackage.haskell.org/package/random-1.1/docs/System-Random.html#v:getStdGen</link></para>
+</listitem><listitem>
+<para><computeroutput>newStdGen</computeroutput> - <link xlink:href="http://hackage.haskell.org/package/random-1.1/docs/System-Random.html#v:newStdGen">http://hackage.haskell.org/package/random-1.1/docs/System-Random.html#v:newStdGen</link> </para>
+</listitem></itemizedlist>
+</para>
+                <para>Definition at line 27 of file GlobalRandom.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GlobalRandom.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="classASCIIWars_1_1GlobalRandom_1a650d98f5b3610bf7f169d94064c33d96">
+                <title>static ASCIIWars.GlobalRandom.GlobalRandom ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1GlobalRandom_1ad40c313d502809aad3398da0e8d1d8e6">
+                <title>static Random ASCIIWars.GlobalRandom.NewRandomGenerator ()</title> <emphasis>Создаёт новый генератор и возвращает его.</emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1GlobalRandom_1a781ebf6e30b09d6b5ec1f97a2337564b">
+                <title>static Random ASCIIWars.GlobalRandom.NewRandomGenerator (int seed)</title> <emphasis>Создаёт новый генератор с сидом и возвращает его.</emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1GlobalRandom_1a64f8803c3b01fc0971feac020deaa8c6">
+                <title>static int ASCIIWars.GlobalRandom.Next (int max)</title> <emphasis>То же самое, что и &lt;tt&gt;GlobalRandom.RandomGenerator.Next(max)&lt;/tt&gt;.</emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1GlobalRandom_1af84b17383838baa18d8c1d070d26e6c5">
+                <title>static int ASCIIWars.GlobalRandom.Next (int min, int max)</title> <emphasis>То же самое, что и &lt;tt&gt;GlobalRandom.RandomGenerator.Next(min, max)&lt;/tt&gt;.</emphasis>
+                
+            </section>
+</section>

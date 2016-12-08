@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classASCIIWars_1_1Game_1_1SituationControllersRegistry">
+<title>ASCIIWars::Game::SituationControllersRegistry class Reference</title>
+<para>Inheritance diagram for ASCIIWars::Game::SituationControllersRegistry</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1SituationControllersRegistry__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ASCIIWars::Game::SituationControllersRegistry</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classASCIIWars_1_1Game_1_1SituationControllersRegistry__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static readonly Dictionary&lt; string, SituationController &gt; Controllers</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classASCIIWars_1_1Game_1_1SituationControllersRegistry_1a577021be8e7ca3bca0679a5123ced293">SituationControllersRegistry</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classASCIIWars_1_1Game_1_1SituationControllersRegistry_1a6b66911781c68cab75889451cd3b6644">Add</link> (
+string id, <link linkend="interfaceASCIIWars_1_1Game_1_1SituationController">SituationController</link> controller)<para><emphasis>То же самое, что и &lt;tt&gt;Controllers[id] = controller&lt;/tt&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="interfaceASCIIWars_1_1Game_1_1SituationController">SituationController</link> <link linkend="classASCIIWars_1_1Game_1_1SituationControllersRegistry_1a11452e55e8852e375d27f2637ab7d743">Get</link> (
+string id)<para><emphasis>То же самое, что и &lt;tt&gt;Controllers[id]&lt;/tt&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Содержит контроллеры ситуаций по ID&apos;шникам. </para>
+    </simplesect>
+        <simplesect>
+            <title>Подробное описание</title>
+
+<para>По умолчанию добавляются стандартные контроллеры:<itemizedlist>
+<listitem>
+<para><computeroutput>branch</computeroutput> -&gt; <link linkend="classASCIIWars_1_1Game_1_1BranchSituationController">ASCIIWars.Game.BranchSituationController</link></para>
+</listitem><listitem>
+<para><computeroutput>enemy</computeroutput> -&gt; <link linkend="classASCIIWars_1_1Game_1_1EnemySituationController">ASCIIWars.Game.EnemySituationController</link></para>
+</listitem><listitem>
+<para><computeroutput>merchant</computeroutput> -&gt; <link linkend="classASCIIWars_1_1Game_1_1MerchantSituationController">ASCIIWars.Game.MerchantSituationController</link></para>
+</listitem><listitem>
+<para><computeroutput>craftingPlace</computeroutput> -&gt; <link linkend="classASCIIWars_1_1Game_1_1CraftingPlaceSituationController">ASCIIWars.Game.CraftingPlaceSituationController</link></para>
+</listitem></itemizedlist>
+</para>
+
+<para><formalpara><title>См. также: </title>
+
+<para>SitutationController </para>
+</formalpara>
+</para>
+                <para>Definition at line 50 of file SituationControllers.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SituationControllers.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationControllersRegistry_1a577021be8e7ca3bca0679a5123ced293">
+                <title>static ASCIIWars.Game.SituationControllersRegistry.SituationControllersRegistry ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationControllersRegistry_1a6b66911781c68cab75889451cd3b6644">
+                <title>static void ASCIIWars.Game.SituationControllersRegistry.Add (string id, SituationController controller)</title> <emphasis>То же самое, что и &lt;tt&gt;Controllers[id] = controller&lt;/tt&gt;.</emphasis>
+                
+            </section>
+            <section xml:id="classASCIIWars_1_1Game_1_1SituationControllersRegistry_1a11452e55e8852e375d27f2637ab7d743">
+                <title>static SituationController ASCIIWars.Game.SituationControllersRegistry.Get (string id)</title> <emphasis>То же самое, что и &lt;tt&gt;Controllers[id]&lt;/tt&gt;.</emphasis>
+                
+            </section>
+</section>
