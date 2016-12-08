@@ -1,6 +1,0 @@
-<map id="ASCIIWars.Game.GameController" name="ASCIIWars.Game.GameController">
-<area shape="rect" id="node2" href="$classASCIIWars_1_1Game_1_1SituationContainer.html" title="ASCIIWars.Game.Situation\lContainer" alt="" coords="21,5,205,46"/>
-<area shape="rect" id="node3" href="$classASCIIWars_1_1Game_1_1Situation.html" title="ASCIIWars.Game.Situation" alt="" coords="21,71,205,97"/>
-<area shape="rect" id="node4" href="$classASCIIWars_1_1Game_1_1Player.html" title="Представляет игрока. " alt="" coords="29,121,198,148"/>
-<area shape="rect" id="node5" href="$classASCIIWars_1_1Game_1_1ItemContainer.html" title="ASCIIWars.Game.ItemContainer" alt="" coords="5,172,221,199"/>
-</map>
