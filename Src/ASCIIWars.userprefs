@@ -1,9 +1,5 @@
 ﻿<Properties StartupConfiguration="{817A6BCC-63D6-44EB-A92C-333E4DD42F6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ASCIIWars/Game/EnemySituationController.cs">
-    <Files>
-      <File FileName="ASCIIWars/Game/EnemySituationController.cs" Line="49" Column="59" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
